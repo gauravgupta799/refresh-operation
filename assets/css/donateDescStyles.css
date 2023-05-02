@@ -1,0 +1,133 @@
+.dontate_desc_section{
+    display: flex;
+    flex-direction: column;
+    /* gap: 8rem; */
+    margin-bottom: 8em;
+    background: var(--bg-color);
+}
+.donate_top_container{
+    width: 100%;
+    /* height: 80.6rem; */
+
+    height: 40rem;
+}
+.donate_top_container>img{
+    width: 100%;
+    height: 100%;
+}
+.donate_bottom_container{
+    /* width: 1366px; */
+    /* width: 1305px; */
+    /* width: 1195px; */
+    display: grid;
+    grid-template-columns:1fr;
+    grid-column: 8rem;
+    padding: 18rem 0;
+
+}
+.danate_left_side{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+    
+    /* Mobile */
+    /* width: 300%; */
+}
+.thumbnail_img_wrapper{
+    position: relative;
+}
+.thumbnail_img_wrapper>img:nth-child(2){
+    position: absolute;
+    left: 6.3rem;
+}
+.thumbnail_img_wrapper>img:nth-child(3){
+    position: absolute;
+    left: 12rem;
+}
+.donate_heading{
+    width: 55.9rem,;
+    height: 13.7rem;
+    font-family: "object sans";
+    font-size: 5.6rem;
+    font-weight: 400;
+    line-height: 6.8rem;
+    font-style: normal;
+    /* text-align: left; */
+    color:var(--primary-color);
+}
+.donate_para{
+    width: 53.6rem;
+    height: 14rem;
+    font-family: "dm sans";
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 4rem;
+    font-style: normal;
+    text-align: left;
+    color: var(--light-gray);
+    /* margin-top: -3em; */
+}
+.danate_right_side {
+   display: flex;
+   flex-direction: column;
+   row-gap:2.4rem;
+   align-items: flex-end;
+}
+.danate_right_side > .donate_card{
+    width: 50.5rem;
+    height: 24rem;
+    background: var(--white);
+    display: flex;
+}
+.donate_card_left{
+    padding:3.8em;
+}
+.donate_card_para{
+    width: 27.5rem;
+    height: 8.7rem;
+    font-family: "dm sans";
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+    font-style: var(--normal);
+    text-align: left;
+    color: var(--black);
+}
+.doner_name{
+    height: 2rem;
+    font-family: "object sans";
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 8rem;
+    font-style: var(--normal);
+    /* text-align: left; */
+    color: var(--primary-color);
+}
+.donate_card_right{
+    width: 18.6rem;
+    height: 24rem;
+    background: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    color:var(--white);
+}
+.days_num {
+    font-family: "dm sans";
+    /* font-size: 1.4rem; */
+    font-weight: 400;
+    line-height: 3.2rem;
+    font-style: var(--normal);
+    text-align: center;
+    color:var(--white);
+}
+.amount {
+    font-family: "object sans";
+    /* font-size: 4.4rem; */
+    font-weight: 400;
+    line-height: 6.8rem;
+    font-style: var(--normal);
+    text-align: center;
+    color:var(--white);
+}

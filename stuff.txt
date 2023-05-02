@@ -1,0 +1,76 @@
+Font Sizes Headings
+100px -> h1
+80px -> h2
+72px
+56px -> h3
+32px  -> h4
+
+Sub Headings Font Size
+28px
+20px -> h5
+24px
+16px navlinks font-size an btn
+14px ->h6
+
+<---- Paragraphs Font Size---->
+20px
+
+Primary Btn Font-size 
+20px
+Footer Link Font size
+24px
+20px
+
+
+Card Buttons
+width:352px
+height: 71px;
+
+Primary Button
+width: 244px;
+height: 65px;
+
+Navbar Button
+width: 227px;
+height: 51px;
+
+h1- 100px;
+h2- 72px;
+h3- 56px;
+h4- 28px;
+h5- 20px
+h6- 16px
+
+Paragraphs
+24px 
+20px
+
+14px
+Price
+24px
+
+Nav-Lists
+16px
+
+Footer-Lists
+20px
+
+Button Texts
+16px
+20px
+24px
+
+h1 -  120px;
+h2 - 72px;
+h3 - 56px;
+h4-  28px;
+h5- 24px;
+h5- 18px;
+
+
+p - 20px;
+
+secondary__btn--text - 16px;
+primary__btn--text- 20px;
+
+list__item - 20px;

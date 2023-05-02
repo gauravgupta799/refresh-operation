@@ -1,0 +1,130 @@
+.survivors__row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 8rem;
+    margin: 12rem 0;
+}
+.survivors-col-top{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    row-gap: 3.2rem;
+    padding:1.5em 0;
+}
+.surv_heading{
+    width: 69.2rem;
+    height: 12.6rem;
+    font-family: "object sans";
+    font-size: 5.6rem;
+    font-weight: 400;
+    line-height: 6.8rem;
+    font-style: var(--normal);
+    text-align: center;
+    color: var(--primary-color);
+}
+.surv_para{
+    width: 66.9rem;
+    height: 10.4rem;
+    font-family: "dm sans";
+    /* font-size: 2rem; */
+    font-weight: 400;
+    line-height: 4rem;
+    font-style: var(--normal);
+    text-align: center;
+    color: var(--light-gray)
+}
+.survivors-col-center{
+    display: flex;
+    height: 66.4rem;
+    background: var(--dark-bg);
+}
+.center__row{
+    width: 100%;
+    height: 66.4rem;
+    display: flex;
+}
+.center__row .col--1{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap:4.8rem;
+    background: var(--primary-color);
+}
+.number{
+    width: 19.3rem;
+    font-family: "object sans";
+    font-size: 12rem;
+    font-weight: 400;
+    font-style: var(--normal);
+    color: var(--white);
+    padding-left:6rem;
+}
+.num_para{
+    /* width: 27.5rem; */
+    height: 2rem;
+    font-family: "dm sans";
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: var(--normal);
+    color: var(--white);
+}
+.center__row .col--2{
+    width: 40%;
+    padding-left: 0rem !important;
+}
+.center__row .col--2 >img {
+    width: 104% !important;
+    height: 100%;
+}
+.survivors-col-bottom{
+    width: 26.3rem;
+    height: 6.5rem;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#send_req_btn{
+    width: 100%;
+    height: 100%;
+    border:none;
+    background: transparent;
+    font-family: "dm sans";
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2rem;
+    font-style: var(--normal);
+    color: var(--white);
+}
+.survivors-col-bottom:hover{
+    color: var(--white);
+    cursor:pointer;
+}
+#send_req_btn:hover{
+    cursor:pointer;
+}
+
+.survivors-col-bottom::before{
+    content:"";
+    left: 0;
+    top: 0;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background:var(--secondary-color);
+    transform:translateX(-100%);
+    transition:all 0.8s;
+    z-index: -1;
+}
+.survivors-col-bottom:hover::before{
+    transform:translateX(0);
+}

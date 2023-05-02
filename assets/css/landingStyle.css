@@ -1,0 +1,278 @@
+/* Landing_Section Styles Start */
+.hero__row{
+    /* display: flex; */
+    margin-top: 15rem !important;
+    display: flex;
+    justify-content: center;
+
+}
+.hero__left_col{
+    display: flex;
+    flex-direction: column;
+    /* justify-content:center; */
+    /* text-align: center; */
+}
+.landing_heading{
+    font-family: "object sans";
+    font-weight: 400;
+    /* line-height: 7.2rem; */
+    text-align: left;
+    font-style: var(--normal);
+    color: var(--primary-color);
+    margin-bottom: 0.25em;
+    font-size: 5.6rem;
+}
+.landing_para{
+    height: 10.9rem;
+    font-family: "dm sans";
+    /* font-size: 2rem; */
+    font-weight: 400;
+    line-height:3rem;
+    text-align: left;
+    font-style: var(--normal);
+    color:var(--dark-gray);
+}
+.hero__right_col{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     margin-top: 2rem;
+}
+.right_inner_wrapper{
+    filter: drop-shadow(0px 3px 20px var(--light-shadow));
+    background:var(--white);
+    padding: 3em 2em 0em 2em;
+    
+    /*Mobile*/
+    height: 100%;
+    width: 100%;
+    -webkit-filter: drop-shadow(0px 3px 20px var(--light-shadow));
+}
+.right_inner_wrapper > .amount_title{
+    font-family: "object sans";
+    /* font-size: 2.8rem; */
+    font-weight: 400;
+    line-height: 2rem;
+    font-style: var(--normal);
+    text-align: center;
+    color: var(--primary-color);
+}
+.amount_form_wrapper{
+    margin-top:2.4rem;
+    display: flex;
+    flex-direction: column;
+    row-gap:1.6rem;
+    /* border:1px solid green; */
+}
+.input_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* Mobile */
+    flex-direction: column;
+    gap:2rem;
+}
+.top_input_wrapper > input{
+    border:2px solid var(--border-color);
+    background: var(--white);
+    padding: 1em;
+
+    /* Mobile */
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+}
+.middle_input_wrapper > input,select{
+    border:2px solid  var(--border-color);
+    background: var(--white);
+    padding: 1em;
+    text-align: center;
+
+     /* Mobile */
+     width: 100%;
+     height: 6rem;
+     display: flex;
+     flex-direction: column;
+     gap:2rem;
+     /* margin:1rem; */
+}
+.bottom_input_wrapper >textarea{
+    /* width: 38.5rem; */
+    /* width: 100%; */
+    /* height: 12rem; */
+    border:2px solid  var(--border-color);
+    background: var(--white);
+    padding: 1rem;
+
+     /* Mobile */
+     width: 100%;
+     height: 15rem;
+}
+.payment_option_wrapper{
+    width: 38.1rem;
+    height: 3.7rem;   
+
+     /* Mobile */
+    /* width: 100%;
+    height: 100%; */
+}
+.payment_option_wrapper >img{
+    width: 100%;
+    height: 100%;
+}
+.donate_now-btn{
+    /* width: 44.8rem; */
+    /* height: 7.1rem; */
+    background: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    z-index:1;
+
+     /* Mobile */
+     width: 100%;
+     height: 100%;
+}
+.donate_link{
+    font-family: "object sans";
+    font-size: 2rem;
+    font-weight: var(--bold);
+    line-height: 5.6rem;
+    font-style: var(--normal);
+    color: var(--white);
+}
+.donate_now-btn:hover{
+    cursor:pointer;
+}
+.donate_now-btn::before{
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--primary-color);
+    z-index:-1;
+    transform:translateX(-100%);
+    transition:all 0.8s;
+}
+.donate_now-btn:hover::before{
+    transform:translateX(0);
+}
+
+@media only screen and (min-width:36.124em){
+    .hero__row{
+        margin-top: 15rem;
+        display: flex;
+        row-gap:0rem;
+    }
+    .hero__left_col{
+        text-align:left;
+        /* width: 100%; */ 
+    }
+    .hero__row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .landing_heading{
+        width: 68.2rem;
+        /* font-size: 6rem; */
+        line-height: 7.2rem;
+        text-align: left;
+        margin-bottom: 0.5em;
+    }
+    .landing_para{
+        width: 60.7rem;
+        height: 10.9rem;
+        font-family: "dm sans";
+        /* font-size: 2.4rem; */
+        line-height: 4rem;
+    }
+    .hero__right_col{
+        align-items: flex-end;
+        margin-top:0rem;
+   }
+   .input_wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+   .right_inner_wrapper{
+        width: 44.8rem;
+        height: 47.1rem;
+        padding: 3em 2em 0em 2em;
+    }
+    .right_inner_wrapper > .amount_title{
+        width: 32.9rem;
+        height: 2.9rem;
+        /* font-size: 2.8rem; */
+        line-height: 4rem;
+        text-align: left;
+    }
+    .right_inner_wrapper > .amount_title{
+        width: 32.9rem;
+        height: 2.9rem;
+        /* font-size: 2.8rem; */
+        line-height: 4rem;
+        text-align: left;
+    }
+    .amount_form_wrapper{
+        margin-top:2.4rem;
+        display: flex;
+        flex-direction: column;
+        row-gap:1.6rem;
+    }
+    .input_wrapper{
+       flex-direction: row;
+       gap:0rem;
+    }
+    .top_input_wrapper > input{
+        width: 11.7rem;
+        height: 6.3rem;
+        border:2px solid var(--border-color);
+        background: var(--white);
+        padding: 1em;
+         flex-direction: row;
+        /* text-align: center; */
+    }
+    .middle_input_wrapper > input,select{
+        width: 18.1rem;
+        height: 6.3rem,;
+        /* text-align: center; */
+    }
+    .bottom_input_wrapper >textarea{
+        /* width: 38.5rem; */
+        width: 100%;
+        height: 12rem;
+        padding: 1rem;
+    }
+    .donate_now-btn{
+        width: 44.8rem;
+        height: 7.1rem;
+    }
+    .donate_link{
+        font-size: 2.4rem;
+        line-height: 9.2rem;
+    }
+}
+@media only screen and (min-width:48em){
+   
+}
+
+@media only screen and (min-width:62px){
+   
+}
+
+@media only screen and (min-width:80em){
+   
+}
+
+@media only screen and (min-width:98.75em){
+   
+} 

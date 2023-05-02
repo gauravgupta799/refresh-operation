@@ -1,0 +1,418 @@
+@import url("./reset.css");
+@import url("./headerStyles.css");
+@import url("./landingStyle.css");
+@import url("./collaboration.css");
+@import url("./donateDescStyles.css");
+@import url("./survivourStyles.css");
+@import url("./programsStyles.css");
+@import url("./footerStyles.css");
+@import url("./contactUsStyles.css");
+/* @import url(""); */
+
+@font-face {
+    font-family: 'object sans';
+    src: url("../Fonts/Object_Sans/ObjectSans-Regular.eot");
+    src: url("../Fonts/Object_Sans/ObjectSans-Regular.otf") format('opentypefile'),
+        url("../Fonts/Object_Sans/ObjectSans-Regular.woff") format('woff'),
+        url("../Fonts/Object_Sans/ObjectSans-Regular.woff2") format('woff2'),
+        url("../Fonts/Object_Sans/ObjectSans-Regular.ttf") format('truetype'),
+        url("../Fonts/Object_Sans/ObjectSans-Regular.svg#ObjectSans-Regular") format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dm sans';
+    src: url("../Fonts/DM_Sans/DMSans-Regular.eot");
+    src: url("../Fonts/DM_Sans/DMSans-Regular.otf") format('opentypefile'),
+        url("../Fonts/DM_Sans/DMSans-Regular.woff") format('woff'),
+        url("../Fonts/DM_Sans/DMSans-Regular.woff2") format('woff2'),
+        url("../Fonts/DM_Sans/DMSans-Regular.ttf") format('truetype'),
+        url("../Fonts/DM_Sans/DMSans-Regular.svg#DMSans-Regular") format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dm sans';
+    src: url("../Fonts/DM_Sans/DMSans-Bold.eot");
+    src: url("../Fonts/DM_Sans/DMSans-Bold.otf") format('opentypefile'),
+        url("../Fonts/DM_Sans/DMSans-Bold.woff") format('woff'),
+        url("../Fonts/DM_Sans/DMSans-Bold.woff2") format('woff2'),
+        url("../Fonts/DM_Sans/DMSans-Bold.ttf") format('truetype'),
+        url("../Fonts/DM_Sans/DMSans-Bold.svg#DMSans-Bold") format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+:root{
+    /* Colors */
+    --primary-color:#4d148c;
+    --secondary-color:#f96703;
+    --bg-color:#eef1f6;
+    --dark-bg:#eee8f5;
+    --white:#ffffff;
+    --light-white:#EEF1F6;
+    --gray:#4d4d4d;
+    --light-gray:#464646;
+    --dark-gray:#212121;
+    --darker-gray:#1e1e1e;;
+    --border-color:#d8d8d8;
+    --black:#000000;
+
+    --light-green:#54ca9f;
+    --lighter-green:#80d8d1;
+    --light-yellow:#ffe60f;
+
+    /* Box-Shadows */
+    --light-shadow:rgba(0,0,0,0.16 );
+    --lighter-box-shadow:rgba(0,0,0,0.1);
+
+    /* Font-Sizes */
+    --normal-font:1rem;
+
+    /* Font-Styles */
+    --normal:normal;
+    --bold:bold;
+    --f-400:400;
+    --f-900:900;
+}
+html{
+     font-size:62.5%;
+}
+body {
+    background-image:url("./assets/images/gray-bg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 2969px;
+	line-height: 1.3;
+}
+a:hover{
+    cursor: pointer;
+}
+input[type="number"]:focus,input[type="text"]:focus,textarea:focus, select:focus{
+    border:2px solid var(--primary-color)!important;
+    outline:none !important;
+    box-shadow: none !important;
+}
+
+.bg-primary{
+    background:var(--primary-color) !important;
+}
+.bg-secondary{
+    background:var(--secondary-color) !important;
+}
+.btn--text{
+    text-transform: uppercase;
+    font-size:clamp(0.5rem, 6vw, 2rem)  
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-primary{
+    width: 22.7rem;
+    height: 5.1rem;
+    border:2px solid var(--primary-color);
+}
+.btn-secondary{
+    width: 24.4rem;
+    height: 6.5rem;
+}
+
+/* ================= Common Properties ============================ */
+h1,h2,h6,.d_now--text, .f_list--item,.btn--text,
+.days__num,.conuter__para{
+    color:var(--white);
+}
+h3, h4, h5, .ampsd, .author,.nav__list,.nav__btn--text,
+.program__card--text {
+    color:var(--primary-color);
+}
+h1,h2,h3,h4,h5,h6, .d_now--text, .author, .ampsd,.f_list--item{
+    font-family: "object sans";
+    font-weight: var(--f-900);
+}
+.nav__btn--text,.btn--text,.card__desc,
+.days__num,.conuter__para{
+    font-family:"dm sans";
+}
+
+.pri__subheading, .sec_subheading,
+.card__desc,.days__num, .conuter__para{
+    font-weight: normal;
+}
+.nav__list, .nav__btn--text,.program__card--text,
+.btn--text{
+    font-weight: bold;
+}
+.btn--text,.nav__list,.nav__btn--text{
+    line-height: var(--normal);
+}
+li,h1,h2,h3,h4,h5,h6, .d_now--text, .author, .ampsd,.f_list--item
+.pri__subheading, .sec_subheading, 
+.nav__list, .nav__btn--text,.program__card--text, 
+.card__desc,.days__num, .conuter__para,
+.btn--text{
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing:normal;
+}
+.primary__subheading{
+    color: #212121;
+}
+.sec_subheading{
+    color: #1e1e1e;
+}
+.card__desc{
+    color: #000;
+}
+/* =============================================== */
+h1{
+    font-size:12rem;
+    line-height: 1.4;
+}
+h2{
+    font-size:7.2rem;
+    line-height: 1.28;
+}
+h3{
+    font-size:6rem;
+    line-height: 1.2;
+} 
+h4{
+    font-size:5.6rem;
+    line-height: 1.21;
+} 
+h5{
+    font-size:4.4rem;
+    line-height: 1.43;
+} 
+h6{
+    font-size:2.8rem;
+    line-height: 1.55;
+} 
+.ampsd{
+    font-size: 3.2rem;
+    line-height: 4.78;
+}
+.d_now--text{
+    font-size: 2.4rem;
+    line-height: 3.38;
+}
+.author{
+    font-size: 2rem;
+    line-height: 4;
+}
+.f_list--item{
+    font-size: 2rem;
+    line-height: 3.33;
+}
+.primary__subheading{
+    font-size: 2.4rem;
+    line-height: 1.67;
+}
+.sec_subheading{
+    font-size:2rem;
+    line-height: 2;
+}
+.nav__list{
+    font-size: 1.6rem;
+}
+.nav__btn{
+    width: 22.7rem;
+    height: 5.1rem;
+}
+.nav__btn--text{
+    font-size: 1.6rem;
+}
+.program__card--text{
+    font-size: 2.4rem;
+    line-height: 3.33;
+}
+
+/* ===== Donate Card ===== */
+.card__desc{
+    font-size: 1.8rem;
+    line-height: 1.78;
+}
+.days__num{
+    font-size: 1.4rem;
+    line-height: 2.29;
+}
+.conuter__para{
+    font-size: 2rem;
+    line-height: 2;
+}
+/* ========================== */
+
+
+
+
+
+
+
+
+
+
+/* Line-height */
+/* 
+168px 92px 80px 72x 68px 40px 32px 20px 16px 
+*/
+
+
+/* 
+P1-  24px "dm sans" normal  40px normal color: #212121;
+P2-  20px "dm sans" normal 40px normal; #464646
+P3-  18px "dm sans" normal 32px normal #000000;
+P4-  14px "dm sans" normal 32px normal #ffffff
+*/
+
+/* 
+heading-1: 120px "object sans" normal  168px normal  #ffffff;
+heading-2: 72px  "object sans" normal 92px normal  #fffdf6;
+heading-3: 60px "object sans" normal 72px normal
+heading-4: 56px "object sans" normal 68px normal;  #4d148c;
+heading-5: 44px "object sans" normal 68px  normal #ffffff 
+heading-6: 28px "object sans" normal 40px normal
+/* 
+
+/*
+Main-heading: 60px "object sans" normal 72px normal
+Secondary-heading:  56px "object sans" normal 68px normal;  #4d148c;
+  44px "object sans" normal 68px  normal #ffffff 
+  PC-heading: 24px "dm sans" bold 80px normal
+  20px "object sans" normal 80px normal #4d148c
+
+
+-----------------------------------------------------
+heading-1: 120px "object sans" normal  168px normal  #ffffff;
+heading-2: 72px  "object sans" normal 92px normal  #fffdf6;
+heading3: 60px "object sans" normal 72px normal
+heading-4: 56px "object sans" normal 68px normal;  #4d148c;
+heading-5: 44px "object sans" normal 68px  normal #ffffff 
+heading6: 24px "dm sans" bold 80px normal
+-----------------------------------------------------
+
+-----------------------------------------------------
+P1-  24px "dm sans" normal  40px normal color: #212121;
+P2-  20px "dm sans" normal 40px normal; #464646
+P3-  18px "dm sans" normal 32px normal #000000;
+P4-  14px "dm sans" normal 32px normal #ffffff
+-----------------------------------------------------
+
+----------------------------------------------------
+list__item: 16px "dm sans" bold 16px normal;  color: #000000;
+Footer list : 24px "object sans" normal 80px  normal
+copyright:  20px "object sans" normal  40px normal
+------------------------------------------------------
+
+-------------------------------------------------------
+ btn1: 16px "dm sans" bold 16px normal 227px * 51px;  2px solid  #4d148c transparent
+ btn-2: 24px "object sans"; bold 92px normal 448px * 71px #f96703;
+ btn-3: 20px "dm sans" bold  20px normal  #f96703  244px * 65px
+ btn-4: 20px "dm sans" bold  20px normal  263px * 65px  #4d148c
+btn-5: 20px "dm sans" bold  20px normal #ffffff 243px * 65px #4d148c
+---------------------------------------------------------------------
+
+*/
+
+
+/* ----header----- 
+
+list__item: 16px "dm sans" bold 16px normal;  color: #000000;
+btn__text: 16px  "dm sans" bold 16px normal 227px * 51px; 
+
+border:2px solid  #4d148c transparent;
+
+*/
+
+/* Landing Page  
+fsize ffamily fweight lheight fstyle
+-----------------------------------------------
+Heading:  60px "object sans" normal 72px normal
+------------------------------------------------
+Paragraph: 24px "dm sans" normal  40px normal color: #212121;
+-----------------------------------------------
+select-amount:  28px "object sans" normal 40px normal
+-----------------------------------------------------
+Donate now text: 24px "object sans"; bold 92px normal
+
+btn: 448px * 71px #f96703;
+*/
+
+/* 
+Secondary-heading: 56px "object sans" normal 68px normal;  #4d148c;
+Paragraph:         20px "dm sans" normal 40px normal; #464646
+btn:               20px "dm sans" bold  20px normal  #f96703
+btn-size:          244px * 65px
+*/
+
+/* Card-
+Heading :       18px "dm sans" normal 32px normal #000000;
+Author Text:    20px "object sans" normal 80px normal #4d148c
+days:           14px "dm sans" normal 32px normal #ffffff
+price-text:     44px "object sans" normal 68px  normal #ffffff 
+*/
+
+/* 
+Connect surviour
+Number-heading: 120px "object sans" normal  168px normal  #ffffff;
+para:           20px "dm sans" normal  40px normal #ffffff
+
+btn:  20px "dm sans" bold  20px normal  263px * 65px  #4d148c
+*/
+
+/* 
+PRograms:
+Card
+
+PC-heading: 24px "dm sans" bold 80px normal
+font-family: "dm sans";
+font-size: 24px;
+font-weight: bold;
+line-height: 80px;
+font-style: normal;
+text-align: left;
+color: #4d148c;
+
+
+*/
+
+/* 
+Contact Us
+Heading:  72px  "object sans" normal 92px normal  #fffdf6;
+btn: - 20px "dm sans" bold  20px normal #ffffff
+243px * 65px #4d148c
+
+
+*/
+
+/* 
+Footer list : 24px "object sans" normal 80px  normal
+copyright:  20px "object sans" normal  40px normal
+
+*/
+
+/* 1rem = 1em = 16px */
+
+/* 100% = 16px */
+/* 1px = 100/16= 6.25%*/
+/* 10px = 6.25% * 10 = 62.5% */
+
+/* 1vw = 12px */
+/* 1px = 0.084vw */
+/* 1366px = (1366 * 0.084)vw = 113.833333vw  */
+
+/* 1vh = 10px */
+/* 1px = 0.1vh */
+/* 2969px = (2969 * 0.1)vh = 296.9vh */
+
+
+/* 578px 
+468px =29.25em, 
+768px= 48em, 
+992px, 
+1280px, 
+1580px, */
+
