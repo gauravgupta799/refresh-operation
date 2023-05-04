@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="icon" href="./assets/images/logos/main_logo.svg" type="image/icon type">
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="contactStyles.css"> -->
+    <title>Contact</title>
+</head>
+<body>
+    <div id="preloader">
+        <div class="spinner-border text-white" role="status">
+        </div>
+        <span class="loading__title">Loading...</span>
+    </div>
+    <div class="progress"></div>
+
+    <header class="header">
+        <div class="container header__container ">
+            <div class="logo__wrapper">
+                <a href="#" class="header__logo d-inline-flex">
+                    <img src="./assets/images/logos/main_logo.svg" 
+                    alt="logo"
+                    class="logo__img"
+                    >
+                </a>
+            </div>
+            <div class="nav__wrapper desktop__menu">
+                <nav class="navbar__room">
+                    <ul class="nav__lists display">
+                        <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#story">Our Story</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#room">Rehab Room</a></li>
+                    </ul>
+                </nav>          
+                    <a href="#contact" class="nav__btn display text-uppercase " role="button">
+                        Become a supporter
+                    </a>
+            </div>
+            <div class="hamburger__wrapper">
+                <img src="./assets/images/img/hamburger.webp" alt="hamburgerIcon">
+            </div>           
+        </div>
+
+         <!-- mobile header -->
+        <div class="header-wrapper--mobile">
+            <div class="container">
+                <button type="button" class="btn-close close__icon" aria-label="Close"></button>
+                <div class="col-md-12 col-sm-4 col-xs-4 mobile__menu_icon">
+                    <a href="#">
+                        <img src="./assets/images/logos/footer_logo.svg"alt="">
+                    </a>
+                </div>
+                <nav class="mobile__nav ">
+                    <ul class="nav__lists mobile__nav__lists">
+                        <li class="nav__item mobile__navItem"><a class="nav__link" href="#home">Home</a></li>
+                        <li class="nav__item mobile__navItem"><a class="nav__link" href="#story">Our Story</a></li>
+                        <li class="nav__item mobile__navItem"><a class="nav__link" href="#room">Rehab Room</a></li>
+                    </ul>
+                </nav>
+                <div class="d-flex align-items-center justify-content-center my-5 mobile__nav_btn mobile__navItem">
+                    <a href="#contact" class="nav__btn">
+                        <span class="nav__btn-text text-uppercase"> Become a supporter</span>
+                    </a>
+                </div> 
+            </div>   
+        </div> 
+    </header>
+
+    <!--======= Main Start =======-->
+    <main class="main contact--main">
+        <section class="contact__section">
+            <div class="container">
+                <div class="contact__container">
+                    <div class="row text-center">
+                        <h1 class="contact__heading text-primary text-uppercase animate-fade-in">Contact</h1>
+                        <p class="contact__subheading text-primary text-capitalize mx-auto px-lg-0 animate-fade-in-up">
+                            Fill Out the form consetetur sadipscing elitr, sed
+                             diam nonumy eirmod
+                        </p>
+                    </div>
+                    <div class="row text-center">
+                        <div class="contact__formWrapper d-flex flex-column align-items-center justify-content-center">
+                            <form class="contact__form d-flex flex-column align-items-center justify-content-center">
+                                <div class="form-group input__div d-flex align-items-center justify-content-between bg-white animate-fade-in-up">
+                                    <img src="./assets/images/contact/user.svg" alt="user svg icon">
+                                    <input type="text" class="form-control contact_input" id="name" name="text" value="" placeholder="Name" onfocus="this.placeholder=''" onblur="this.placeholder='Name'"
+                                     required>
+                                </div>
+                                <div class="form-group input__div d-flex align-items-center justify-content-between bg-white animate-fade-in-up">
+                                    <img src="./assets/images/contact/email.svg" alt="email svg icon">    
+                                    <input type="email" class="form-control contact_input" id="email" name="email" value="" placeholder="Email Address" onfocus="this.placeholder=''" onblur="this.placeholder='Email Address'" required>
+                                </div>
+                                <div class="form-group input__div d-flex align-items-center justify-content-between bg-white animate-fade-in-up">
+                                    <img src="./assets/images/contact/call.svg" alt="phone svg icon">
+                                    <input type="tel" class="form-control contact_input" id="phone" name="phone" placeholder="Phone Number" onfocus="this.placeholder=''" onblur="this.placeholder='Phone Number'"
+                                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                    required>
+                                </div>
+                                <div class="form-group textarea__div w-100 bg-white animate-fade-in-up">
+                                    <textarea class="form-control contact__textarea contact_input bg-transparent outline-0 border-0" id="textarea" rows="5" placeholder="Comment" onfocus="this.placeholder=''" onblur="this.placeholder='Comment'"></textarea>
+                                </div>
+                            </form>
+                            <div class="form__btn animate-fade-in-up">
+                                <button type="submit" class="btn bg-secondary submit--btn text-white text-uppercase colla_btn_wrapper border-0 rounded-0">Submit Details</button>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="address">
+            <div class="container">
+                <div class="row position-relative">
+                    <h2 class="d-flex justify-content-sm-start justify-content-md-end text-primary  position-absolute text-uppercase address__heading animate-fade-in">
+                        Address <br> Line Denver
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm- 12">
+                        <img src="./assets/images/contact/group.webp" alt="This is an image of operation refresh team." class="img-fluid w-100 h-auto animate-fade-in" >
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm- 12 contact__descWrapper">
+                        <ul class="contact__lists  d-flex flex-column align-items-start justify-content-center">
+                            <li class="contact__item d-flex justify-content-center animate-fade-in-up">
+                                <img src="./assets/images/contact/call.svg" alt="callIcon">
+                                <a href="" class="contact__link text-primary">30-2106019311</a>
+                            </li>
+                            <li class="contact__item d-flex justify-content-center animate-fade-in-up">
+                                <img src="./assets/images/contact/email.svg" alt="emailIcon">
+                                <a href=""  class="contact__link text-primary">Operationrefresh@info</a>
+                            </li>
+                            <li class="contact__item d-flex justify-content-center animate-fade-in-up">
+                                <img src="./assets/images/contact/pin.svg" alt="locationIcon">
+                                <a href=""  class="contact__link text-primary">
+                                    Keas 69 Str.
+                                    Athens, Greece
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#" class="contact__viewMap text-decoration-underline link-offset-1">View On Maps</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+   <!--======= Main End=======-->
+
+    <!--======= Footer Section Start =======-->
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="row Flogo__wrapper">
+                    <div class="col-md-12 col-sm-4 col-xs-4">
+                        <a href="#" class="footer_logo">
+                            <img src="./assets/images/logos/footer_logo.svg"alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__grid mt-11">
+                    <ul class="menu_lists d-flex flex-column gap-5 ">
+                        <li class="footer_link_item"><a class="footer_link text-capitalize">Keas 69 Str. Athens, Greece</a></li>
+                        <li class="footer_link_item"><a class="footer_link text-capitalize">30-2106019311</a></li>
+                        <li class="footer_link_item"><a class="footer_link text-capitalize">Operationrefresh@info</a></li>
+                    </ul>
+                    <ul class="menu_lists d-flex flex-column gap-5 ">
+                        <li class="footer_link_item"><a class="footer_link text-capitalize" href="#">Our Stories</a></li>
+                        <li class="footer_link_item"><a class="footer_link text-capitalize" href="#">Services</a></li>
+                        <li class="footer_link_item"><a class="footer_link text-capitalize" href="#">People Stories</a></li>
+                    </ul>                   
+                    <div class="d-flex flex-column gap-5" style="width:300px">
+                        <ul class="menu_lists d-flex flex-column gap-5">
+                            <li class="footer_link_item"><a class="footer_link text-capitalize" href="#">Our Stories</a></li>
+                            <li class="footer_link_item"><a class="footer_link text-capitalize" href="#">Services</a></li>
+                        </ul>                           
+                        <ul class="social_lists menu_lists d-flex justify-content-between align-items-center ">
+                            <li class="social_list">
+                                <a class="social_link" href="#">
+                                    <img src="./assets/images/socials-icons/facebook.svg" alt="Facebook">
+                                    <!-- <svg xmlns="./assets/images/socials-icons/facebook.svg" width="14" height="26"
+                                        viewBox="0 0 9.641 18">
+                                        <g id="Group_18" data-name="Group 18" transform="translate(-102 -10607)">
+                                            <path id="Icon_awesome-facebook-f" data-name="Icon awesome-facebook-f"
+                                                d="M10.618,10.125l.5-3.258H7.992V4.753a1.629,1.629,0,0,1,1.837-1.76H11.25V.22A17.329,17.329,0,0,0,8.728,0C6.153,0,4.471,1.56,4.471,4.385V6.867H1.609v3.258H4.471V18H7.992V10.125Z"
+                                                transform="translate(100.391 10607)"  />
+                                        </g>
+                                    </svg>                                    -->
+                                </a>
+                            </li>
+                            <li class="social_list">
+                                <a class="social_link" href="#">
+                                    <img src="./assets/images/socials-icons/instagram.svg" alt="Instagram">     
+                                    <!-- <svg xmlns="./assets/images/socials-icons/instagram.svg" width="25" height="25"
+                                        viewBox="0 0 17.759 17.755">
+                                        <g id="Group_19" data-name="Group 19" transform="translate(-159 -10607)">
+                                            <path id="Icon_awesome-instagram" data-name="Icon awesome-instagram"
+                                                d="M8.876,6.563a4.552,4.552,0,1,0,4.552,4.552A4.545,4.545,0,0,0,8.876,6.563Zm0,7.512a2.96,2.96,0,1,1,2.96-2.96,2.965,2.965,0,0,1-2.96,2.96Zm5.8-7.7a1.062,1.062,0,1,1-1.062-1.062A1.059,1.059,0,0,1,14.677,6.377Zm3.015,1.078a5.255,5.255,0,0,0-1.434-3.72A5.289,5.289,0,0,0,12.537,2.3c-1.466-.083-5.86-.083-7.326,0a5.281,5.281,0,0,0-3.72,1.43A5.272,5.272,0,0,0,.057,7.451c-.083,1.466-.083,5.86,0,7.326A5.255,5.255,0,0,0,1.491,18.5a5.3,5.3,0,0,0,3.72,1.434c1.466.083,5.86.083,7.326,0a5.255,5.255,0,0,0,3.72-1.434,5.289,5.289,0,0,0,1.434-3.72c.083-1.466.083-5.856,0-7.322ZM15.8,16.349a3,3,0,0,1-1.688,1.688c-1.169.464-3.942.357-5.234.357s-4.069.1-5.234-.357a3,3,0,0,1-1.688-1.688C1.491,15.18,1.6,12.407,1.6,11.115s-.1-4.069.357-5.234A3,3,0,0,1,3.643,4.194c1.169-.464,3.942-.357,5.234-.357s4.069-.1,5.234.357A3,3,0,0,1,15.8,5.882c.464,1.169.357,3.942.357,5.234S16.261,15.184,15.8,16.349Z"
+                                                transform="translate(159.005 10604.763)" />
+                                        </g>
+                                    </svg>              -->
+                                </a>
+                            </li>
+                            <li class="social_list">
+                                <a class="social_link" href="#">
+                                    <img src="./assets/images/socials-icons/linkedin.svg" alt="linkedin">                              
+                                </a>
+                            </li>
+                            <li class="social_list">
+                                <a class="social_link" href="#">
+                                    <img src="./assets/images/socials-icons/twitter.svg" alt="twitter">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>  
+                </div>
+                <div class="border mt-9"></div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <ul class="d-flex justify-content-between flex-wrap menu_lists footer__privacy">           
+                            <li class="list_item text-capitalize">Privacy Policy</li>
+                            <li class="list_item text-capitalize">Designed By YourHustler</li>
+                            <li class="list_item text-capitalize">Operationrefresh &copy; 2023</li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+        </footer> 
+    <!--======= Footer Section End=======-->
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>

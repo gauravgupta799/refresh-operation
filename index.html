@@ -6,39 +6,36 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="bootstrap-5/css/bootstrap.min.css" />
         <link rel="stylesheet" href="../assets/css/reset.css" />
+        <link rel="icon" href="./assets/images/logos/main_logo.svg" type="image/icon type">
         <link rel="stylesheet" href="styles.css">
 		<title>Operation Refresh</title>
 	</head>
 	<body>
         <div id="preloader">
-            <div class="spinner-border text-white" role="status"></div>
+            <div class="spinner-border text-white" role="status">
+            </div>
+            <span class="loading__title">Loading...</span>
         </div>
         <div class="progress"></div>
 
 		<header class="header">
             <div class="container header__container ">
                 <div class="logo__wrapper">
-                    <a href="#" class="header__logo d-inline-flex">
-                        <img src="./assets/images/logos/main_logo.svg" 
-                        alt="logo"
-                        class="logo__img"
-                        >
+                    <a href="#home" class="header__logo d-inline-flex">
+                        <img src="./assets/images/logos/main_logo.svg" alt="operation refresh logo" class="logo__img" width="100%" >
                     </a>
                 </div>
                 <div class="nav__wrapper desktop__menu">
                     <nav class="navbar__room">
                         <ul class="nav__lists display">
-                            <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
+                            <li class="nav__item"><a class="nav__link" href="index.html" target="_blank">Home</a></li>
                             <li class="nav__item"><a class="nav__link" href="#story">Our Story</a></li>
                             <li class="nav__item"><a class="nav__link" href="#room">Rehab Room</a></li>
                         </ul>
                     </nav>          
-                    <!-- <div class="navBtn"> -->
-                        <a href="#contact" class="nav__btn display text-uppercase " role="button">
-                            <!-- <span class="nav__btn-text text-uppercase"> Become a supporter</span> -->
-                            Become a supporter
-                        </a>
-                    <!-- </div>     -->
+                    <a href="#contact" class="nav__btn display text-uppercase " role="button">
+                        Become a supporter
+                    </a>
                 </div>
                 <div class="hamburger__wrapper">
                     <img src="./assets/images/img/hamburger.webp" alt="hamburgerIcon">
@@ -50,8 +47,8 @@
                 <div class="container">
                     <button type="button" class="btn-close close__icon" aria-label="Close"></button>
                     <div class="col-md-12 col-sm-4 col-xs-4 mobile__menu_icon">
-                        <a href="#">
-                            <img src="./assets/images/logos/footer_logo.svg"alt="">
+                        <a href="#home">
+                            <img src="./assets/images/logos/footer_logo.svg" alt="operation refresh logo" width=""100%>
                         </a>
                     </div>
                     <nav class="mobile__nav ">
@@ -62,7 +59,7 @@
                         </ul>
                     </nav>
                     <div class="d-flex align-items-center justify-content-center my-5 mobile__nav_btn mobile__navItem">
-                        <a href="#contact" class="nav__btn">
+                        <a href="#contact" class="nav__btn" role="button">
                             <span class="nav__btn-text text-uppercase"> Become a supporter</span>
                         </a>
                     </div> 
@@ -75,56 +72,50 @@
                 <div class="container">
                     <div class="row mt-4">
                         <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 pt-6">
-                            <!-- <div class="row pt-6 "> -->
-                                <h3 class="text-uppercase animate-fade-in">
-                                    Refresh the Lives
-                                     of Those Affected 
-                                    by a Brain Injury
-                                </h3>
-                            <!-- </div> -->
-                            <!-- <div class="row mt-10"> -->
-                                <p class="pri__subheading col-lg-9 col-md-12 mt-10 text-capitalize animate-fade-in-up">
-                                    A one-time or long-term donation, everything counts 
-                                    to help us guarantee access to decent healthcare for
-                                    the most neglected people.
-                                </p>
-                            <!-- </div>   -->
+                            <h3 class="text-uppercase animate-fade-in">
+                                Refresh the Lives of Those Affected by a Brain Injury
+                            </h3>
+                            <p class="pri__subheading col-lg-9 col-md-12 mt-10 text-capitalize animate-fade-in-up">
+                                A one-time or long-term donation, everything counts 
+                                to help us guarantee access to decent healthcare for
+                                the most neglected people.
+                            </p>
                         </div>               
-                        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 card-wrapper m-md-auto m-sm-auto ">
-                            <div class="hero__card__wrapper card">
-                                <div class="row px-5 py-5 hero__card">
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 card-wrapper m-md-auto m-sm-auto card-animate">
+                            <div class="hero__card__wrapper">
+                                <div class="row px-5 py-5 ">
                                     <h6 class="hero__card__title text-uppercase">Select the Amount</h6>
                                     <form class="row g-4">
                                         <div class="col-lg-4 col-md-4 col-sm-4">
-                                            <input type="button" class="input-bg form-control form-input text-center " id="amount-1"  placeholder="$20"
+                                            <input type="button" class="input-bg form-control form-input text-center " id="amount" placeholder="$20"
                                             name="fifty" value="$20">
                                         </div>
                                         <div class="col-lg-4 col-md-4 col-sm-4">
-                                            <input type="button" class="form-control form-input text-center " id="amount-2" placeholder="$100"
+                                            <input type="button" class="form-control form-input text-center " id="amount" placeholder="$100"
                                             name="hundred"  value="$100">
                                         </div>
                                         <div class="col-lg-4 col-md-4 col-sm-4">
-                                            <input type="button" class="form-control form-input text-center" id="amount-3" placeholder="$150"
+                                            <input type="button" class="form-control form-input text-center" id="amount" placeholder="$150"
                                             name="one-fifty" value="$100">
                                         </div>
                                         <div class="col-md-6">
-                                            <input type="text" class="form-control form-input text-center" id="inputCity" placeholder="Other Amount">
+                                            <input type="text" class="form-control form-input text-center" id="otherAmount" placeholder="Other Amount">
                                         </div>
                                         <div class="col-md-6">
                                             <select id="inputOnce" class="form-select form-control form-input text-center">
                                             <option selected="" class="form-option">Once</option>
-                                            <option class="form-option">Weekly</option>
-                                            <option class="form-option">Monthly</option>
-                                            <option class="form-option">Quarterly</option>
-                                            <option class="form-option">Semiannually</option>
-                                            <option class="form-option">Annually</option>
+                                            <option class="form-option" value="">Weekly</option>
+                                            <option class="form-option" value="">Monthly</option>
+                                            <option class="form-option" value="">Quarterly</option>
+                                            <option class="form-option" value="">Semiannually</option>
+                                            <option class="form-option" value="">Annually</option>
                                             </select>
                                         </div>
                                         <div class="form-floating">
-                                            <textarea class="form-control form-textarea text-left px-4" placeholder="Note" id="note"></textarea>
+                                            <textarea class="form-control form-textarea text-left px-4" placeholder="Note" id="note" role="note" area-label="note"></textarea>
                                         </div>
                                         <div class="w-100" style="margin-top:17px">
-                                            <img src="../assets/images/payment_options.png" alt="payement_options" style="width:100%">
+                                            <img src="../assets/images/payment_options.png" class="img-fluid" alt="payement_options" style="width:100%">
                                         </div>
                                     </form>
                                 </div>                     
@@ -143,7 +134,7 @@
         <!--======= Video Section Start =======-->
             <section class="videoSection">
                 <div class="container">
-                    <div class="video__row row mt-4 display">                
+                    <div class="video__row row mt-4 display ">                
                         <div id="player"></div>
                         <div class="col-lg-12 col-md-12 display playButton">
                             <img src="./assets/images/img/playIcon.png" alt="play_icon" class="playBtn">
@@ -152,8 +143,6 @@
                     </div>  
                 </div>
             </section>
-
-            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/dyB5uctVDAQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
         <!--======= Video Section End =======-->
 
         <!--======= Collborate Section Start =======-->
@@ -161,9 +150,8 @@
                 <div class="container">
                     <div class="row mt-4">
                         <div class="top col-lg-10 col-md-12 col-sm-12 col-xs-12 ">
-                            <h4 class="text-uppercase animate-fade-in">Collaborate hand-in-hand
-                                with survivors by accidents <br>
-                                to Refresh their lives.
+                            <h4 class="text-uppercase animate-fade-in">
+                                Collaborate hand-in-hand with survivors by accidents to Refresh their lives.
                             </h4>
                         </div>
                         <div class="colla_desc_container col-lg-7 col-md-12 col-sm-12 col-xs-12 mt-10 ">
@@ -177,7 +165,7 @@
                                     Operation ReFresh is an advocate to educate caregivers and survivors about the benefits of immediate consistent rehabilitation. The program “Brick By Brick” puts the organization on the road to build a health and wellness rehabilitation facility to give survivors a sense of normalcy by encouraging our motto, “Failure Is Not An Option.”
                                 </p>
                         </div>
-                        <div class="col-lg-12 col-md-12 col-sm-5 col-xs-2  mt-6">
+                        <div class="col-lg-12 col-md-12 col-sm-5 col-xs-2 mt-6 animate-fade-in-up">
                             <a href="#learn_more" class="colla_btn_wrapper display" role="button">
                                 <span class="btn--text text-uppercase">Learn More</span>
                             </a>
@@ -188,10 +176,10 @@
         <!--======= Collborate Section End =======-->
 
         <!-- ======= Donate-top Section Start ======= -->
-            <section class="group-pic">
+            <section class="group-pic animate-fade-in-up">
                 <div class="donate_top_container container-fluid mt-3">
-                    <img src="./assets/images/img/img-2n.webp" alt=""
-                    width="100%">
+                    <img src="./assets/images/img/img-2n.webp" alt="This is an image of patient"
+                    width="100%" class="img-fluid">
                 </div>
             </section>
         <!--======= Donate-top Section Start =======-->
@@ -203,9 +191,9 @@
                         <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
                             <div class="row d-flex flex-column">
                                 <div class="thumbnail_img_wrapper col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <img src="../assets/images/thumb_img1.png" alt="thumb_img1" >
-                                    <img src="../assets/images/thumb_img2.png" alt="thumb_img2">
-                                    <img src="../assets/images/thumb_img3.png" alt="thumb_img3">
+                                    <img src="../assets/images/thumb_img1.png" alt="donar thumnail">
+                                    <img src="../assets/images/thumb_img2.png" alt="donar thumnail">
+                                    <img src="../assets/images/thumb_img3.png" alt="donar thumnail">
                                 </div>
                                 <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 mt-10">
                                     <h4 class="text-uppercase animate-fade-in">Donate to Change Lives</h4>
@@ -217,7 +205,7 @@
                                 </div>
                             </div>         
                         </div>                 
-                        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 danate_right_side ">
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 danate_right_side card-animate">
                             <div class="donate_card">
                                 <div class="donate_card_left">
                                     <img src="../assets/images/quotes.png" alt="ampersandIcon"  class="ampersand_icon">
@@ -267,29 +255,29 @@
         <section class="survivour">
             <div class="container surv__container">
                 <div class="row d-flex flex-column align-items-center justify-content-center mt-1">
-                    <h4 class=" text-center col-lg-7 col-md-12 col-sm-12 text-uppercase animate-fade-in">Connect survivors with resources</h4>
+                    <h4 class="col-lg-7 col-md-12 col-sm-12  text-center text-uppercase animate-fade-in">Connect survivors with resources</h4>
                     <p class=" mt-12 col-lg-6 sec_subheading text-center text-capitalize animate-fade-in-up">The goal is to connect survivors with resources and assist with physical and mental well-being of survivors and caregivers to gain and retain the most valuable aspect, FAITH!</p>
                 </div>
                 <div class="row d-flex mx-0 mt-7">
                     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 
                     sur__col-left bg-primary">
                         <div class="numb__div" style="margin-bottom:68px">
-                            <h1 class="number text-center">116</h1>
-                            <p class="num_para text-capitalize">The goal is to connect survivors</p>
+                            <h1 class="number text-center animate-fade-in">116</h1>
+                            <p class="num_para text-capitalize animate-fade-in-up">The goal is to connect survivors</p>
                         </div>
                         <br>
                         <div class="numb__div">
-                            <h1 class="number text-center">116</h1>
-                            <p class="num_para text-capitalize">The goal is to connect survivors</p>
+                            <h1 class="number text-center animate-fade-in">116</h1>
+                            <p class="num_para text-capitalize animate-fade-in-up">The goal is to connect survivors</p>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 sur__col-right">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 sur__col-right animate-fade-in">
                         <img src="./assets/images/img/img-3n.webp" alt="survivor_group_img"
                         > 
                     </div>
                 </div>
                 <div class="row mt-12">
-                    <div class="survivors-col-bottom col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="survivors-col-bottom col-lg-4 col-md-4 col-sm-4 col-xs-12 animate-fade-in-up">
                         <a href ="#send_request" class="surv_btn" role="button">
                             <span id="send_req_btn" class="btn--text text-uppercase">Send Request</span>
                         </a>
@@ -358,14 +346,8 @@
                                     </p>
                                 </div>
                                 <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12 d-flex align-items-end justify-content-end program_ImgWrapper">
-                                    <!-- <div class=""> -->
                                         <img src="./assets/images/img/img-4n.webp" 
-                                        alt="group3_img" 
-                                       class="img-fluid""    
-                                       width="100%"
-                                       height="auto"                     
-                                        >                   
-                                    <!-- </div> -->
+                                        alt="Group image of operation refresh team" class="img-fluid" width="100%" height="auto"      >                   
                                 </div>                  
                             </div>
                         </div>
@@ -379,12 +361,12 @@
                 <div class="container">
                     <div class="row pt-1 pb-2">
                         <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12 ">
-                            <h2 class="text-uppercase animate-fade-in-up">
+                            <h2 class="text-uppercase animate-fade-in">
                                 are you a survivor that is looking for some assistance?
                             </h2>
                         </div> 
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pt-5">
-                            <a class="btn bg--primary contact__btn" role="button">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pt-5 animate-fade-in-up">
+                            <a class="btn bg--primary contact__btn" role="button" href="contact.html">
                                 <span class="contact__text btn--text text-uppercase">Contact Us</span>
                             </a>
                         </div>                   
@@ -399,7 +381,7 @@
         <footer class="footer">
             <div class="container footer__container">
                 <div class="row Flogo__wrapper">
-                    <div class="col-md-12 col-sm-4 col-xs-4">
+                    <div class="col-md-12 col-sm-4 col-xs-4 animate-fade-in">
                         <a href="#" class="footer_logo">
                             <img src="./assets/images/logos/footer_logo.svg"alt="">
                         </a>
@@ -422,8 +404,8 @@
                             <li class="footer_link_item"><a class="footer_link text-capitalize" href="#">Services</a></li>
                         </ul>                           
                         <ul class="social_lists menu_lists d-flex justify-content-between align-items-center ">
-                            <li class="social_list">
-                                <a class="social_link" href="#">
+                            <li class="social_list animate-fade-in-up">
+                                <a class="social_link" href="#facebook">
                                     <img src="./assets/images/socials-icons/facebook.svg" alt="Facebook">
                                     <!-- <svg xmlns="./assets/images/socials-icons/facebook.svg" width="14" height="26"
                                         viewBox="0 0 9.641 18">
@@ -435,8 +417,8 @@
                                     </svg>                                    -->
                                 </a>
                             </li>
-                            <li class="social_list">
-                                <a class="social_link" href="#">
+                            <li class="social_list animate-fade-in-up">
+                                <a class="social_link" href="#instagram" >
                                     <img src="./assets/images/socials-icons/instagram.svg" alt="Instagram">     
                                     <!-- <svg xmlns="./assets/images/socials-icons/instagram.svg" width="25" height="25"
                                         viewBox="0 0 17.759 17.755">
@@ -448,13 +430,13 @@
                                     </svg>              -->
                                 </a>
                             </li>
-                            <li class="social_list">
-                                <a class="social_link" href="#">
+                            <li class="social_list animate-fade-in-up">
+                                <a class="social_link " href="#linkedin">
                                     <img src="./assets/images/socials-icons/linkedin.svg" alt="linkedin">                              
                                 </a>
                             </li>
-                            <li class="social_list">
-                                <a class="social_link" href="#">
+                            <li class="social_list animate-fade-in-up">
+                                <a class="social_link" href="#twitter">
                                     <img src="./assets/images/socials-icons/twitter.svg" alt="twitter">
                                 </a>
                             </li>

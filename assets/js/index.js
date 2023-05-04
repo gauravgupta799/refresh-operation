@@ -18,7 +18,10 @@ const videoRow = document.querySelector(".video__row");
 
 const loader = document.getElementById("preloader");
 
-// const videoId = "dyB5uctVDAQ";
+const InputDiv = document.querySelectorAll(".input__div");
+
+const videoId = "3kJCZTC1aaE";
+const clr = "#4d148c";
 // 3kJCZTC1aaE
 
 window.addEventListener("load",()=>{
@@ -57,13 +60,18 @@ inputBn.forEach(item=>{
   })
 })
 
+InputDiv.forEach((item, i)=>{
+  item.addEventListener("click", ()=>{
+    item.classList.toggle("isBorder");
+  })
+})
 
 var player;
 function onYouTubeIframeAPIReady() {
   player = new YT.Player("player", {
     height: "100%",
     // width: "100%",
-    videoId: "nR3ok_P2gzI",
+    videoId: videoId,
     playerVars: {
       playsinline: 1,
       autoplay: 0,
@@ -145,3 +153,24 @@ textContainers.forEach((item, i) => {
     ease: Power4.easeOut,
   });
 });
+
+
+// animate fade in up
+const cardContainers = gsap.utils.toArray(".card-animate");
+cardContainers.forEach((item, i) => {
+  const anim = gsap.fromTo(
+    item,
+    { opacity: 0, y: "-30%" },
+    { duration: 1, opacity: 1, y: 0 }
+  );
+  ScrollTrigger.create({
+    trigger: item,
+    animation: anim,
+    toggleActions: "play",
+    once: true,
+    duration: 1,
+    stagger:0.1,
+    ease: Power4.easeOut,
+  });
+});
+
