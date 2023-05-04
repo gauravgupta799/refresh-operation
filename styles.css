@@ -149,7 +149,7 @@ body {
     background-image:url("./assets/images/gray-bg");
     background-repeat: no-repeat;
     background-size:cover;
-    height: 296.9rem;
+    /* height: 296.9rem; */
     font-stretch: var(--normal);
     font-style: var(--normal);
     letter-spacing:var(--normal);
@@ -781,7 +781,7 @@ input[type="button"].active{
      background: var(--white);
      display: flex;
      height: 24rem;
-     max-width: 50rem;
+     /* max-width: 50rem; */
  }
  .donate_card_left{
     padding-left:clamp(1rem, 6vw + 1rem, 2.9rem) !important;
@@ -820,7 +820,6 @@ input[type="button"].active{
      justify-content:center;
      flex-direction: column;
      color:var(--white);
-     /* min-width: 12rem; */
      min-width: 15rem;
      margin-left: auto;
  }
@@ -941,9 +940,6 @@ input[type="button"].active{
 .sur__col-right{
     padding-right: 0 !important;
     padding-left: 0 !important;
-}
-.sur__col-right >img{
-    width: 100%;
 }
 /*? ===== Survivours Styles End */
 
@@ -1322,6 +1318,11 @@ input[type="button"].active{
 /* === padding bottom end ==== */
 
 /* ======================================================== */
+@media only screen and (max-width:1200px){
+    .donate_card_right{
+        min-width: 12rem;
+    }
+}
 @media only screen and (max-width:992px){
     .spinner-border{
         width:12rem !important;
@@ -1353,6 +1354,9 @@ input[type="button"].active{
     }
     .playButton> img {
         width: 4rem;
+    }
+    .donate_card_right{
+        min-width: 20rem;
     }
     .danate_right_side {
       margin-top: 3rem;

@@ -96,7 +96,7 @@ function onPlayerStateChange(event) {
   }
 }
 
-playIcon.addEventListener('click',() => {
+playIcon.addEventListener('click', ()=> {
     videoRow.style.position = 'static';
     playIcon.style.display = 'none';
     pauseIcon.style.display = 'block';
