@@ -1,0 +1,204 @@
+.about--main{
+    padding-top: 12em;
+    padding-bottom: 10em;
+}
+
+/* === story start ===*/
+.story__subheading{
+    max-width: 53rem;
+    font-size: clamp(0.7rem, 6vw + 1rem, 2rem);
+    line-height: 1.6;
+}
+.sotry__heading{
+    max-width: 66.7rem;
+    font-size: clamp(4.5rem, 6vw + 1rem, 10rem);
+    line-height: 1.1;
+    color: var(--primary-color);
+    margin-top: 2rem;
+}
+.story__video{
+    width: 100%;
+    max-width: 100%;
+    height: 40rem;
+    min-height: 30rem;
+    margin: 5rem 0 10rem;
+}
+/* === story end ===*/
+
+
+/* === Rehab start === */
+.rehab__card{
+    max-width: 42.8rem;
+    height: 5rem;
+    margin-bottom: 2rem;
+    padding-right: 15.8em;
+}
+.rehab__heading{
+    line-height: 1.28;
+}
+.rehab__card-title{
+    font-size: clamp(1rem, 6vw + 1rem, 2.4rem);
+    line-height: 3.33;
+}
+.rehab__desc--container{
+    height: 34.5rem;
+}
+.rehab__desc{
+    max-width: 51rem;
+    font-size: clamp(0.7rem, 6vw + 1rem, 2rem);
+    line-height: 2;
+}
+/* === Rehab end === */
+
+
+
+/* === Recovery start === */
+.recover__rectangle{
+    height: 35rem;
+    margin-top: 12rem;
+}
+/* === Recovery End === */
+
+
+/* === Journey Start === */
+.journey{
+    height: 116rem;
+    margin: 21.5rem 0 22.5rem;
+    padding-top:  19.5em ;
+    padding-bottom: 26.5em;
+    background-color: var(--primary-color);
+}
+.journey__heading{
+    margin-bottom: 22rem;
+}
+.journey__sm--title, .journey__desc{
+    font-size: clamp(0.7rem, 6vw + 1rem, 2rem);
+    line-height: 2;
+}
+.journey__sm--title{
+    height: 2.6rem;
+}
+.counter{
+    height: 7.3rem;
+    line-height: 1.43;
+}
+.journey__desc{
+    max-width: 30.3rem;
+    height: 14.5rem;
+    margin-top: 2rem;
+}
+/* === Journey End === */
+
+
+/* === valuesTools start === */
+.tools__heading{
+    max-width: 89rem;
+    line-height: 1.43;
+}
+.values__video{
+    height: 30rem;
+    margin-top: 12.5rem;
+    margin-bottom: 3.6rem;
+    background-color: var(--primary-color);
+}
+/* === valuesTools End === */
+
+
+/* === Join start === */
+.join{
+    height: 86rem;
+    margin-top: 33rem;
+    padding: 14.5rem 32.6rem 40rem 8.5rem ;
+    background-color: var(--secondary-color);
+    margin-bottom: -12rem;
+}
+.join__btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 6.5rem;
+    background-color: #4d148c;
+    padding: 1.25em 2.8125em;
+    font-size: clamp(0.7rem, 6vw + 1rem, 2rem);
+    font-weight: bold;
+    border:2px solid var(--primary-color) !important;
+}
+.join__btn:hover{
+    color:white !important;
+}
+/* === Join End === */
+
+
+@media only screen and (min-width:576px){
+    .about--main{
+        padding-top: 14em;
+    }
+    .story__video{
+        min-height: 35rem;
+        margin: 5rem 0 15rem;
+    }
+    .sofar__title{
+        margin-bottom: -3rem;
+    }
+    .sotry__heading{
+        margin-top: 2.3rem;
+    }
+    .rehab__card{
+        height: 6.3rem;
+        margin-bottom: 4.8rem;
+        padding-right: 15.8em;
+    }
+    .recover__rectangle{
+        height: 52.6rem;
+        margin-top: 15rem;
+    }
+    .recover__rectangle{
+        height: 40rem;
+        margin-top: 15rem;
+    }
+}
+
+@media only screen and (min-width:768px){
+    .about--main{
+        padding-top: 15em;
+    }
+    .story__video{
+        min-height: 45rem;
+        margin: 5rem 0 20rem;
+    }
+    .sotry__heading{
+        margin-top: 2.5rem;
+    }
+    .recover__rectangle{
+        height: 45rem;
+        margin-top: 17.5rem;
+    }
+
+}
+@media only screen and (min-width:992px){
+    .about--main{
+        padding-top: 17.5em;
+    }
+    .story__video{
+        height: 55rem;
+        min-height: 45rem;
+        margin: 5rem 0 22rem;
+    }
+    .sotry__heading{
+        margin-top: 2.7rem;
+    }
+    .recover__rectangle{
+        height: 48rem;
+        margin-top: 19.5rem;
+    }
+}
+@media only screen and (min-width:1200px){
+    .story__video{
+        height: 67rem;
+        margin: 5rem 0 25rem;
+    }
+    .recover__rectangle{
+        height: 52.6rem;
+        margin-top: 21rem;
+    }
+}

@@ -1,4 +1,5 @@
 @import url("./contactStyle.css");
+@import url("./aboutStyle.css");
 
 /* ======= Object-sans Slanted ======*/
 @font-face {
@@ -191,12 +192,6 @@ button{
     outline:none !important;
     box-shadow: none !important;
 }
-.bg-primary{
-    background:var(--primary-color) !important;
-}
-.bg-secondary{
-    background:var(--secondary-color) !important;
-}
 .btn--text{
     font-family:var(--dm-sans);
     font-weight: var(--bold);
@@ -218,12 +213,29 @@ button{
     width: 24.4rem;
     height: 6.5rem;
 }
+
+.bg-primary{
+    background:var(--primary-color) !important;
+}
+.bg-secondary{
+    background:var(--secondary-color) !important;
+}
+.text-black{
+    color: var(--black) !important;
+}
+.text-darkGray{
+    color: var(--dark-gray) !important;
+}
 .text-white{
     color:var(--white) !important;
 }
 .text-primary{
     color:var(--primary-color) !important;
 }
+.text-secondary{
+    color:var(--secondary-color) !important;
+}
+
 
 /* ================= Common Properties ============================ */
 h1,h2,h6,.d_now--text, .f_list--item,.btn--text,
@@ -270,9 +282,7 @@ h1,h2,h3,h4,h5,h6, .d_now--text, .author, .ampsd,
     color: var(--primary-color);
     /* text-decoration: none; */
 }
-/* ======= Width x Height Properties Start ========= */
 
-/* ======= Width x Height Properties End ========= */
 
 /* =============================================== */
 h1{
@@ -1090,11 +1100,9 @@ input[type="button"].active{
 
 /*? ====== Contact Styles Start ======= */
 .contact{
-    /* height: 40rem; */
     background-image: url("./assets/images/contact_bckg.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 113rem; */
     object-fit: contain;
     background-color: var(--secondary-color);
     margin-top: -32rem;
@@ -1142,7 +1150,6 @@ input[type="button"].active{
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: -13%;
-    /* height: 723px; */
     padding-top: 19.6rem;
     object-fit: contain;
 }

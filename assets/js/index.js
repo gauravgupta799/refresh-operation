@@ -60,9 +60,12 @@ inputBn.forEach(item=>{
   })
 })
 
-InputDiv.forEach((item, i)=>{
-  item.addEventListener("click", ()=>{
-    item.classList.toggle("isBorder");
+InputDiv.forEach((item)=>{
+  item.addEventListener("focusin", ()=>{
+    item.classList.add("isBorder");
+  })
+  item.addEventListener("focusout", ()=>{
+    item.classList.remove("isBorder");
   })
 })
 
