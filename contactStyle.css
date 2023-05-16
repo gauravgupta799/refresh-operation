@@ -131,7 +131,6 @@
         margin-top: -12rem;
     }
 }
-
 @media only screen and (min-width:36em){
     .contact__subheading{
         padding-inline:1em;
@@ -169,7 +168,6 @@
         padding-top: 12em;
     }
 }
-
 @media only screen and (min-width:48em){
     .contact__subheading{
         padding-inline:2em;

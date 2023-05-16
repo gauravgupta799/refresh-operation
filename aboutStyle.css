@@ -25,6 +25,9 @@
 /* === story end ===*/
 
 /* === Rehab start === */
+.rehab{
+    padding-bottom: 30rem;
+}
 .rehab__card{
     max-width: 42.8rem;
     height: 5rem;
@@ -54,7 +57,6 @@
 }
 /* === Rehab end === */
 
-
 /* === Recovery start === */
 .recover__rectangle{
     height: 28rem;
@@ -64,7 +66,6 @@
     margin-top: 9rem !important;
 }
 /* === Recovery End === */
-
 
 /* === Journey Start === */
 .journey{
@@ -95,9 +96,9 @@
     top: 0;
     bottom: 0;
     width: 23.5rem;
-    max-width: 20%;
+    max-width: 50%;
     height: 1px;
-    border:1.6px dotted #fff;
+    border:1.2px dashed var(--white);
     transform: translate(20px, 27px);
     -webkit-transform: translate(20px, 27px);
     -moz-transform: translate(20px, 27px);
@@ -112,7 +113,6 @@
 }
 /* === Journey End === */
 
-
 /* === valuesTools start === */
 .tools__heading{
     max-width: 89rem;
@@ -125,7 +125,6 @@
     background-color: var(--primary-color);
 }
 /* === valuesTools End === */
-
 
 /* === Join start === */
 .join{

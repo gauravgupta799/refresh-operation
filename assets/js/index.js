@@ -2,10 +2,11 @@ const bodyEle1 = document.querySelector(".body");
 const scrollProgress = document.querySelector(".progress");
 
 const header = document.querySelector(".header");
+const headerHome = document.querySelector(".header--home");
 const hamburgerBtn = document.querySelector(".hamburger__wrapper");
 const desktopMenu = document.querySelector(".desktop__menu");
 const headeMobileWrapper = document.querySelector(".header-wrapper--mobile");
-const closeIcon = document.querySelector(".close__icon");
+const closeIcon = document.querySelector(".btn-close");
 const mobileNav = document.querySelectorAll(".mobile__navItem");
 const inputBn = document.querySelectorAll('input[type="button"]');
 
@@ -34,7 +35,8 @@ window.addEventListener('scroll', () => {
     scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
 
     if(window.scrollY > 20){
-      header.classList.add("stickyHeader")
+      header.classList.add("stickyHeader");
+      headerHome.classList.add("stickyHeader")
     }else{
       header.classList.remove("stickyHeader")
     }
@@ -99,41 +101,44 @@ function onPlayerStateChange(event) {
   }
 }
 
-playIcon.addEventListener('click', ()=> {
-    videoRow.style.position = 'static';
-    playIcon.style.display = 'none';
-    pauseIcon.style.display = 'block';
-    player.playVideo();
-    videoContainer.addEventListener("mouseover", ()=>{
-      playBtn.style.opacity = 1
-    })
-    videoContainer.addEventListener("mouseleave", ()=>{
-      playBtn.style.opacity = 0;
-    })
-})
+if(pauseIcon != null){
+  playIcon.addEventListener('click', ()=> {
+      videoRow.style.position = 'static';
+      playIcon.style.display = 'none';
+      pauseIcon.style.display = 'block';
+      player.playVideo();
+      playBtn.style.animationPlayState = "paused";
+      videoContainer.addEventListener("mouseover", ()=>{
+        playBtn.style.opacity = 1
+      })
+      videoContainer.addEventListener("mouseleave", ()=>{
+        playBtn.style.opacity = 0;
+      })
+  })
+  pauseIcon.addEventListener('click',() => {
+    videoRow.style.position = 'relative';
+    playIcon.style.display = 'block';
+    pauseIcon.style.display = 'none';
+    player.pauseVideo();
+    playBtn.style.animationPlayState = "running";
+  })
+}
 
-pauseIcon.addEventListener('click',() => {
-  videoRow.style.position = 'relative';
-  playIcon.style.display = 'block';
-  pauseIcon.style.display = 'none';
-  player.pauseVideo();
-})
 
-
-//  animation fade in 
+// animation fade in 
 const fadeIn = gsap.utils.toArray(".animate-fade-in");
 fadeIn.forEach((mainContent, i) => {
   const anim = gsap.fromTo(
     mainContent,
     { opacity: 0 },
-    { duration: 1, opacity: 1, stagger: 0.2 }
+    { duration: 1.2, opacity: 1, stagger: 0.5 }
   );
   ScrollTrigger.create({
     trigger: mainContent,
     animation: anim,
     toggleActions: "play",
     once: true,
-    duration: 1,
+    duration: 1.2,
     ease: Power4.easeOut,
   });
 });
@@ -143,35 +148,35 @@ const textContainers = gsap.utils.toArray(".animate-fade-in-up");
 textContainers.forEach((item, i) => {
   const anim = gsap.fromTo(
     item,
-    { opacity: 0, y: 50 },
-    { duration: 1, opacity: 1, y: 0 }
+    { opacity: 0, y: "15%" },
+    { duration: 1.2, opacity: 1, y: 0 }
   );
   ScrollTrigger.create({
     trigger: item,
     animation: anim,
     toggleActions: "play",
     once: true,
-    duration: 1,
+    duration:1.2,
     stagger:0.1,
     ease: Power4.easeOut,
   });
 });
 
 
-// animate fade in up
+// card-fade-in-up
 const cardContainers = gsap.utils.toArray(".card-animate");
 cardContainers.forEach((item, i) => {
   const anim = gsap.fromTo(
     item,
-    { opacity: 0, y: "-30%" },
-    { duration: 1, opacity: 1, y: 0 }
+    { opacity: 0, y: "10%" },
+    { duration: 2, opacity: 1, y: 0 }
   );
   ScrollTrigger.create({
     trigger: item,
     animation: anim,
     toggleActions: "play",
     once: true,
-    duration: 1,
+    duration: 2,
     stagger:0.1,
     ease: Power4.easeOut,
   });

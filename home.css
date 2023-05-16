@@ -1,0 +1,255 @@
+/* === Common background-properties start ===*/
+.bgCommon--props{
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-size: cover;
+    background-position: center;
+}
+/* === Common background-properties end ===*/
+.hamburger__wrapper{
+    width: 30px !important;
+    height: 3px !important;
+    background-color: white !important;
+    transition:all 0.5s;
+    position: relative;
+    cursor: pointer;
+}
+.hamburger__wrapper span{
+    width: 100% !important;
+    height: 100% !important;
+    background-color: white !important;
+}
+.hamburger__wrapper::before{
+    position:absolute;
+    content: " ";
+    top: 8px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white !important;
+}
+.hamburger__wrapper::after{
+    position:absolute;
+    content: " ";
+    top: -8px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white !important;
+}
+
+
+.header--home.stickyHeader{
+    background-color:var(--primary-color) !important;
+    transition:all 0.5s;
+}
+.nav__btn--home{
+    border:2px solid white !important;
+}
+.nav__link--home:hover{
+    color:var(--secondary-color) !important;
+}
+
+.about_btn--wrapper{
+    padding-bottom: 3.438em;
+    margin-top: 7rem;
+}
+.donate_btn--home{
+    padding: 1.8em 3.6em;
+    height: 5rem !important;
+    border:1px solid var(--secondary-color);
+}
+.donate_btn--home:hover{
+    background:transparent;
+}
+   
+.judita-section{
+    background-image: url("./assets/images/home-version/judita.webp");
+    height: 80.5rem;
+}
+
+.group-img-section{
+    background-image: url("./assets/images/home-version/group-img.webp");
+    height: 80.6rem;
+    margin-top: 2rem;
+}
+
+
+/* === Tharapies style start === */
+.tharapies__card {
+    height: 47rem;
+    object-fit: contain;
+    border:2px solid #bfbfbf;
+    position:relative;
+}
+.tharapies__card::before{
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.6);
+    transition:all 0.5s ease;
+}
+.tharapies__card:hover::before{
+    background:rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+/* === Tharapies style end === */
+
+/* === Experience style start === */
+.experices-people{
+    /* background-image: url("./assets/images/home-version/rect-tilt-orange-bg.svg"); */
+    padding: 0px;
+}
+.col-img-1{
+    background-image: url("./assets/images/home-version/img-1.webp");
+    height: 39rem;
+}
+.col-img-2{
+    background-image: url("./assets/images/home-version/img-2.webp");
+    height: 41.1rem;
+}
+.col-img-3{
+    background-image: url("./assets/images/home-version/img-3.webp");
+    height: 34.14rem;
+}
+.col-img-4{
+    background-image: url("./assets/images/home-version/img-4.webp");
+    height: 41.1rem;
+}
+.col-img-5{
+    background-image: url("./assets/images/home-version/img-5.webp");
+    height: 41.1rem;
+}
+.col-img-6{
+    background-image: url("./assets/images/home-version/img-6.webp");
+    height: 54.26rem;
+
+}
+.col-img-7{
+    background-image: url("./assets/images/home-version/img-7.webp");
+    height: 54.26rem;
+}
+/* === Experience style end === */
+
+
+/* ===Therapies Program syle start === */
+.tharapies__card--bg-1{
+    background-image: url("./assets/images/home-version/therapist-1.webp");
+}
+.tharapies__card--bg-2{
+    background-image: url("./assets/images/home-version/therapist-2.webp");
+}
+.tharapies__card--bg-3{
+    background-image: url("./assets/images/home-version/therapist-3.webp");
+}
+.tharapies__card--bg-4{
+    background-image: url("./assets/images/home-version/therapist-4.webp");
+}
+.tharapies__card--bg-5{
+    background-image: url("./assets/images/home-version/therapist-5.webp");
+}
+.tharapies__card--bg-6{
+    background-image: url("./assets/images/home-version/therapist-6.webp");
+}
+/* === Therapies Program syle end === */
+
+
+/* === Contribute style start === */
+.contribute__col--top{
+    height: 35rem;
+    padding-top: 2em;
+    padding-inline:2em;
+}
+.contribute__col--btn{
+    display: inline-block;
+    width: 100% !important;
+    height: 7.1rem;
+    padding: 2rem 5rem;
+    text-align: center;
+    font-size: clamp(1.2rem, 6vw + 1rem, 2.4rem);
+}
+/* === Contribute style end === */
+
+.empower{
+    width: 100%;
+    height: 20vh;
+    position:relative;
+    overflow: hidden;
+}
+.empower__title{
+    position:absolute;
+    font-size: clamp(4rem, 6vw + 1rem, 8rem) !important;
+    animation: move-text 10s linear infinite;
+    -webkit-animation: move-text 10s linear infinite;
+}
+
+@keyframes move-text {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100%;
+    }
+  }
+
+  /* .join--home{
+    margin-top: 0 !important;
+  } */
+
+
+  /* ==== Media Queries start ==== */
+  @media only screen and (min-width:36em){  
+    .donate_btn--home{
+        padding: 1.9em 3.8em;
+        height: 5.7rem !important;
+    }
+    .contribute__col--btn{
+        padding: 2rem 6rem;
+    }
+  }
+  @media only screen and (min-width:48em){
+    .donate_btn--home{
+        padding: 2em 4em;
+        height: 6rem !important;
+    }
+    .contribute__col--btn{
+        padding: 2rem 7rem;
+    }
+
+  }
+  @media only screen and (min-width:62em){
+    .about_btn--wrapper{
+        margin-top: 0rem;
+    }
+    .donate_btn--home{
+        padding: 2.1em 4.2em;
+    }
+    .experices-people{
+        padding: 120px 0 0 120px;
+    }
+    .contribute__col--btn{
+        padding: 2rem 8rem;
+    }
+  }
+  @media only screen and (min-width:75em){
+    .donate_btn--home{
+        padding: 2.2em 4.4em;
+    }
+    .contribute__col--top{
+        height: 35rem;
+        padding-top: 3.4375em;
+        padding-inline:2.5em 1.25em;
+    }
+    .contribute__col--btn{
+        padding: 2rem 9rem;
+    }
+  }
+  @media only screen and (min-width:87.5em){
+    .donate_btn--home{
+        padding: 2.3em 4.6em;
+    }
+  }
+  /* ==== Media Queries end ==== */
