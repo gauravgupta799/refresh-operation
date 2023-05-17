@@ -36,9 +36,8 @@ window.addEventListener('scroll', () => {
 
     if(window.scrollY > 20){
       header.classList.add("stickyHeader");
-      headerHome.classList.add("stickyHeader")
     }else{
-      header.classList.remove("stickyHeader")
+      header.classList.remove("stickyHeader");
     }
 });
 

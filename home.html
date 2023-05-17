@@ -21,15 +21,15 @@
     <header class="header header--home bg-primary">
         <div class="container header__container">
             <div class="logo__wrapper">
-                <a href="#" class="header__logo d-inline-flex">
-                    <img src="./assets/images/logos/footer_logo.svg" alt="logo" class="logo__img">
+                <a href="home.html" class="header__logo d-inline-flex">
+                    <img src="./assets/images/logos/footer_logo.svg" alt="refresh operation's logo" class="logo__img">
                 </a>
             </div>
             <div class="nav__wrapper desktop__menu">
                 <nav class="navbar__room">
                     <ul class="nav__lists display">
                         <li class="nav__item">
-                            <a class="nav__link nav__link--home text-white" href="index.html">
+                            <a class="nav__link nav__link--home text-white" href="home.html">
                              Home
                             </a>
                         </li>
@@ -41,12 +41,11 @@
                         </li>
                     </ul>
                 </nav>          
-                <a href="#donate" class="nav__btn nav__btn--home display text-uppercase text-white" role="button">
+                <a href="donate.html" class="nav__btn nav__btn--home display text-uppercase text-white" role="button">
                     Donate Now
                 </a>
             </div>
             <div class="hamburger__wrapper">
-                <!-- <img src="./assets/images/img/hamburger.webp" alt="hamburgerIcon"> -->
                 <span></span>
             </div>           
         </div>
@@ -56,19 +55,19 @@
             <div class="container">
                 <button type="button" class="btn-close close__icon" aria-label="Close"></button>
                 <div class="col-md-12 col-sm-4 col-xs-4 mobile__menu_icon">
-                    <a href="#">
-                        <img src="./assets/images/logos/footer_logo.svg"alt="">
+                    <a href="home.html">
+                        <img src="./assets/images/logos/footer_logo.svg" alt="refresh operation's logo">
                     </a>
                 </div>
                 <nav class="mobile__nav ">
                     <ul class="nav__lists mobile__nav__lists">
-                        <li class="nav__item mobile__navItem"><a class="nav__link nav__link--home text-white" href="index.html">Home</a></li>
+                        <li class="nav__item mobile__navItem"><a class="nav__link nav__link--home text-white" href="home.html">Home</a></li>
                         <li class="nav__item mobile__navItem"><a class="nav__link nav__link--home text-white" href="about.html">About</a></li>
                         <li class="nav__item mobile__navItem"><a class="nav__link nav__link--home text-white" href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="d-flex align-items-center justify-content-center my-5 mobile__nav_btn mobile__navItem">
-                    <a href="#contact" class="nav__btn nav__btn--home text-white">
+                    <a href="donate.html" class="nav__btn nav__btn--home text-white">
                         <span class="nav__btn-text text-uppercase">Donate Now</span>
                     </a>
                 </div> 
@@ -89,7 +88,7 @@
                     </div>
                     <div class="col-md-12 col-lg-4 d-flex align-items-lg-end justify-content-lg-end">
                        <div class="about_btn--wrapper">
-                            <a href="#learn_more" role="button" class="colla_btn_wrapper donate_btn--home display animate-fade-in-up">
+                            <a href="about.html" role="button" class="colla_btn_wrapper donate_btn--home display animate-fade-in-up">
                                 <span class="btn--text text-uppercase">
                                     Learn More
                                 </span>
@@ -102,7 +101,10 @@
         <!-- Making Reahb end -->
 
         <!-- Judita start -->
-        <section class="judita-section bgCommon--props animate-fade-in">
+        <section class="judita animate-fade-in">
+            <figure class="judita__figure">
+                <img src="./assets/images/home-version/judita.webp" alt="Trulli" class="img-fluid" style="width:100%">
+            </figure>
         </section>
         <!-- Judita end -->
 
@@ -112,28 +114,21 @@
                 <div class="container pt-4">
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-6">
-                            <h4 class="text-uppercase text-white animate-fade-in">
+                            <h4 class="text-uppercase text-white mb-4 mb-md-0 mb-lg-0 animate-fade-in">
                                 Activity <br>
                                 Based therapy program
                             </h4>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-6">
-                            <p class="text-capitalize text-white sec_subheading animate-fade-in-up mt-sm-4">
+                            <p class="text-capitalize text-white sec_subheading animate-fade-in-up">
                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
                             </p>
                             <p class="text-capitalize text-white sec_subheading mt-10 animate-fade-in-up">
                                 Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                             </p>          
-                            <a href="#learn_more" class="colla_btn_wrapper donate_btn--home display mt-10 animate-fade-in-up" role="button">
+                            <a href="about.html" class="colla_btn_wrapper donate_btn--home display mt-10 animate-fade-in-up" role="button">
                                 <span class="btn--text text-uppercase">Learn More</span>
                             </a>
-                            <!-- <div class="about_btn--wrapper mt-10">
-                                <a href="#learn_more" role="button" class="colla_btn_wrapper donate_btn--home display animate-fade-in-up ">
-                                    <span class="btn--text text-uppercase">
-                                        Learn More
-                                    </span>
-                                </a>
-                           </div> -->
                         </div>
                     </div>
                 </div>
@@ -151,19 +146,33 @@
                         </h4>
                     </div>
                 </div>
-                <div class="row experices-people">
+                <div class="row experices-people gutter-0">
                     <div class="col-sm-12 col-md-4 col-lg-4 mt-1">
-                        <div class="col-img-1 mb-4 bgCommon--props animate-fade-in-up"></div>
-                        <div class="col-img-2 exper-col-common bgCommon--props animate-fade-in-up"></div>
+                        <div class="col-img-1 mb-4 animate-fade-in-up w-100">
+                            <img src="./assets/images/home-version/img-1.webp" alt="experience people's image" class="w-100">
+                        </div>
+                        <div class="col-img-2 exper-col-common animate-fade-in-up mb-4 mb-md-0 mb-lg-0 w-100">
+                            <img src="./assets/images/home-version/img-2.webp" alt="experience people's image" class="w-100">
+                        </div>
                     </div>
                     <div class="col-sm-12 col-md-4 col-lg-3">
-                        <div class="col-img-3 mb-4 bgCommon--props animate-fade-in-up"></div>
-                        <div class="col-img-4 mb-4 bgCommon--props animate-fade-in-up"></div>
-                        <div class="col-img-5 bgCommon--props animate-fade-in-up"></div>
+                        <div class="col-img-3 mb-4 animate-fade-in-up w-100">
+                            <img src="./assets/images/home-version/img-3.webp" alt="experience people's image" class="w-100" >
+                        </div>
+                        <div class="col-img-4 mb-4 animate-fade-in-up w-100">
+                            <img src="./assets/images/home-version/img-4.webp" alt="experience people's image" class="w-100" >
+                        </div>
+                        <div class="col-img-5 mb-4 mb-md-0 mb-lg-0 animate-fade-in-up w-100">
+                            <img src="./assets/images/home-version/img-5.webp" alt="experience people's image" class="w-100">
+                        </div>
                     </div>
                     <div class="col-sm-12 col-md-4 col-lg-5">
-                        <div class="col-img-6 bgCommon--props animate-fade-in-up mt-md-4 mt-sm-4 mt-lg-0"></div>
-                        <div class="col-img-7 bgCommon--props animate-fade-in-up mt-md-4"></div>
+                        <div class="col-img-6 mb-4 mb-md-0 mb-lg-0 animate-fade-in-up w-100">
+                            <img src="./assets/images/home-version/img-6.webp" alt="experience people's image" class="w-100">
+                        </div>
+                        <div class="col-img-7 animate-fade-in-up mt-md-4 w-100">
+                            <img src="./assets/images/home-version/img-7.webp" alt="experience people's image" class="w-100">
+                        </div>
                     </div>
                 </div>
             </section>
@@ -221,13 +230,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-10 col-lg-7 mt-10 animate-fade-in-up">
-                        <p class="sec_subheading text-capitalize">
+                    <div class="col-sm-12 col-md-10 col-lg-7 mt-10">
+                        <p class="sec_subheading text-capitalize animate-fade-in-up">
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
                             eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
                              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.                      
                         </p>
-                        <p class="sec_subheading mt-10 text-capitalize">
+                        <p class="sec_subheading mt-10 text-capitalize animate-fade-in-up">
                             Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor 
                             sit amet.    
                         </p>
@@ -247,7 +256,7 @@
             <div class="container">
                 <div class="row">
                     <h4 class="col-sm-12 col-md-12 col-lg-9 text-uppercase text-primary animate-fade-in">
-                        therapies and tools we offer for a 
+                        Therapies and tools we offer for a 
                         <span class="text-secondary">Full-fledged recovery</span>
                     </h4>
                     <p class="col-sm-10 col-md-10 col-lg-7 sec_subheading text-capitalize mt-10 animate-fade-in-up">
@@ -255,38 +264,54 @@
                     </p>
                 </div>
             </div>
-            <div class="row therapist-grid mt-6">
-                <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-end 
-                justify-content-center tharapies__card tharapies__card--bg-1 bgCommon--props">
-                    <h6 class="text-white text-uppercase position-absolute z-1 mb-sm-5 mb-sm-5 mb-lg-5 w-75">
-                        Neurorecovery Network
-                    </h6>
+            <div class="row therapist-grid mt-6 ">
+                <div class="col-sm-12 col-md-6 col-lg-4 tharapies__card px-0">
+                    <figure class="tharapies__figure w-100 h-100 animate-fade-in">
+                        <img src="./assets/images/home-version/therapist-1.webp" alt="tharapist's image" class="img-fluid w-100 tharapies__img ">
+                        <h6 class="text-white text-uppercase position-absolute z-2 mb-5 bottom-0 w-75" style="margin-left:40px">
+                            Neurorecovery Network
+                        </h6>
+                    </figure>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-end justify-content-center 
-                tharapies__card tharapies__card--bg-2 bgCommon--props">
-                    <h6 class="text-white text-uppercase position-absolute z-1 mb-md-4 mb-lg-5 w-75">
-                        cardiovascular Exercise 
-                    </h6>
+                <div class="col-sm-12 col-md-6 col-lg-4 tharapies__card px-0">
+                    <figure class="tharapies__figure w-100 h-100 animate-fade-in">
+                        <img src="./assets/images/home-version/therapist-2.webp" alt="tharapist's image" class="img-fluid w-100 tharapies__img ">
+                        <h6 class="text-white text-uppercase position-absolute z-2 mb-5 bottom-0 w-75" style="margin-left:40px">
+                            cardiovascular Exercise 
+                        </h6>
+                    </figure>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-end justify-content-center tharapies__card tharapies__card--bg-3 bgCommon--props">
-                    <h6 class="text-white text-uppercase position-absolute z-1 mb-sm-5 mb-sm-5 mb-lg-5 col-lg-8">
-                        Locomotor Training
-                    </h6>
+                <div class="col-sm-12 col-md-6 col-lg-4 tharapies__card px-0">
+                    <figure class="tharapies__figure w-100 h-100 animate-fade-in">
+                        <img src="./assets/images/home-version/therapist-3.webp" alt="tharapist's image" class="img-fluid w-100 tharapies__img ">
+                        <h6 class="text-white text-uppercase position-absolute z-2 mb-5 bottom-0 w-50" style="margin-left:40px">
+                            Locomotor Training
+                        </h6>
+                    </figure>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-end justify-content-center tharapies__card tharapies__card--bg-4 bgCommon--props">
-                    <h6 class="text-white text-uppercase position-absolute z-1 mb-sm-5 mb-sm-5 mb-lg-5 w-75">
-                        Activity Based Therapy
-                    </h6>
+                <div class="col-sm-12 col-md-6 col-lg-4 tharapies__card px-0">
+                    <figure class="tharapies__figure w-100 h-100 animate-fade-in">
+                        <img src="./assets/images/home-version/therapist-4.webp" alt="tharapist's image" class="img-fluid w-100 tharapies__img ">
+                        <h6 class="text-white text-uppercase position-absolute z-2 mb-5 bottom-0 w-75" style="margin-left:40px">
+                            Activity Based Therapy
+                        </h6>
+                    </figure>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-end justify-content-center tharapies__card tharapies__card--bg-5 bgCommon--props">
-                    <h6 class="text-white text-uppercase position-absolute z-1 mb-sm-5 mb-sm-5 mb-lg-5 col-lg-7">
-                        Vibration Training
-                    </h6>
+                <div class="col-sm-12 col-md-6 col-lg-4 tharapies__card px-0">
+                    <figure class="tharapies__figure w-100 h-100 animate-fade-in">
+                        <img src="./assets/images/home-version/therapist-5.webp" alt="tharapist's image" class="img-fluid w-100 tharapies__img ">
+                        <h6 class="text-white text-uppercase position-absolute z-2 mb-5 bottom-0 w-50" style="margin-left:40px">
+                            Vibration Training
+                        </h6>
+                    </figure>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-end justify-content-center tharapies__card tharapies__card--bg-6 bgCommon--props">
-                    <h6 class="text-white text-uppercase position-absolute z-1 mb-sm-5 mb-sm-5 mb-lg-5 w-75">
-                        Electrical Stimulation
-                    </h6>
+                <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-end justify-content-center tharapies__card px-0">
+                    <figure class="tharapies__figure w-100 h-100 animate-fade-in">
+                        <img src="./assets/images/home-version/therapist-6.webp" alt="tharapist's image" class="img-fluid w-100 tharapies__img ">
+                        <h6 class="text-white text-uppercase position-absolute z-2 mb-5 bottom-0 w-75" style="margin-left:40px">
+                            Electrical Stimulation
+                        </h6>
+                    </figure>
                 </div>
             </div>
         </section>
@@ -313,7 +338,7 @@
                                 Donation
                             </h6>
                             <p class="text-white text-capitalize 
-                            text-left tery__subheading mt-11 animate-fade-in-up">
+                            text-left tery__subheading mt-12 animate-fade-in-up">
                                 Lorem ipsum dolor sit amet, 
                                 consetetur sadipscing elitr, sed diam 
                                 nonumy eirmod tempor invidunt ut 
@@ -321,7 +346,7 @@
                                 erat, sed diam voluptua.
                             </p>
                         </div>
-                        <a href="#" class="text-white text-uppercase 
+                        <a href="donate.html" class="text-white text-uppercase 
                         bg-secondary contribute__col--btn animate-fade-in">
                             Donate Now
                         </a>
@@ -334,7 +359,7 @@
                                     Volunteering
                                 </h6>
                                 <p class="text-white text-capitalize text-left 
-                                tery__subheading mt-11 animate-fade-in-up">
+                                tery__subheading mt-12 animate-fade-in-up">
                                     Lorem ipsum dolor sit amet, 
                                     consetetur sadipscing elitr, sed diam 
                                     nonumy eirmod tempor invidunt ut 
@@ -342,7 +367,7 @@
                                     erat, sed diam voluptua.
                                 </p>
                             </div>
-                            <a href="#" class="text-white text-uppercase bg-secondary contribute__col--btn animate-fade-in">
+                            <a href="about.html" class="text-white text-uppercase bg-secondary contribute__col--btn animate-fade-in">
                                 Learn More
                             </a>                          
                         </div>
@@ -354,7 +379,7 @@
                                     Job application
                                 </h6>
                                 <p class="text-white text-capitalize text-left 
-                                tery__subheading mt-11 animate-fade-in-up">
+                                tery__subheading mt-12 animate-fade-in-up">
                                     Lorem ipsum dolor sit amet, 
                                     consetetur sadipscing elitr, sed diam 
                                     nonumy eirmod tempor invidunt ut 
@@ -362,7 +387,7 @@
                                     erat, sed diam voluptua.
                                 </p>
                             </div>
-                            <a href="#" class="text-white text-uppercase bg-secondary contribute__col--btn animate-fade-in">
+                            <a href="about.html" class="text-white text-uppercase bg-secondary contribute__col--btn animate-fade-in">
                                 Learn More
                             </a>
                         </div>
