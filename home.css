@@ -8,7 +8,7 @@
 .hamburger__wrapper{
     width: 30px !important;
     height: 3px !important;
-    background-color: white !important;
+    background-color: var(--white) !important;
     transition:all 0.5s;
     position: relative;
     cursor: pointer;
@@ -18,7 +18,7 @@
     transition:all 0.5s;
 }
 .nav__btn--home{
-    border:2px solid white !important;
+    border:2px solid var(--white) !important;
 }
 .nav__link--home:hover{
     color:var(--white) !important;
@@ -47,7 +47,8 @@
 .tharapies__card {
     /* height: 47rem; */
     object-fit: contain;
-    border:2px solid #bfbfbf;
+    /* border:2px solid #bfbfbf; */
+    border:2px solid var(--border-color);
     position:relative;
 }
 .tharapies__card::before{
@@ -65,6 +66,16 @@
     cursor: pointer;
 }
 /* === Tharapies style end === */
+
+/* services style start */
+.service{
+    /* width: 38.6rem; */
+    max-width: 100%;
+    height: 30rem;
+    /* margin: 129.7px 19px 36px; */
+    background-color: var(--primary-color);
+}
+/* services style end */
 
 /* === Experience style start === */
 .experices-people{
@@ -86,8 +97,7 @@
 .contribute__col--btn{
     display: inline-block;
     width: 100% !important;
-    height: 7.1rem;
-    padding: 2rem 5rem;
+    padding: 1.25em 2.5em;
     text-align: center;
     font-size: clamp(1.2rem, 6vw + 1rem, 2.4rem);
 }
@@ -105,6 +115,8 @@
     animation: move-text 10s linear infinite;
     -webkit-animation: move-text 10s linear infinite;
 }
+
+
 
 @keyframes move-text {
     from {
@@ -126,18 +138,18 @@
         padding: 1.9em 3.8em;
         height: 5.7rem !important;
     }
-    .contribute__col--btn{
+    /* .contribute__col--btn{
         padding: 2rem 6rem;
-    }
+    } */
   }
   @media only screen and (min-width:48em){
     .donate_btn--home{
         padding: 2em 4em;
         height: 6rem !important;
     }
-    .contribute__col--btn{
+    /* .contribute__col--btn{
         padding: 2rem 7rem;
-    }
+    } */
 
   }
   @media only screen and (min-width:62em){
@@ -150,9 +162,9 @@
     .experices-people{
         padding: 120px 0 0 120px;
     }
-    .contribute__col--btn{
+    /* .contribute__col--btn{
         padding: 2rem 8rem;
-    }
+    } */
   }
   @media only screen and (min-width:75em){
     .donate_btn--home{

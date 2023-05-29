@@ -4,9 +4,10 @@
 }
 /* === story start ===*/
 .story__subheading{
-    max-width: 53rem;
+    /* max-width: 53rem; */
     font-size: clamp(0.7rem, 6vw + 1rem, 2rem);
-    line-height: 1.6;
+    /* line-height: 1.6; */
+    line-height: 2;
 }
 .sotry__heading{
     max-width: 66.7rem;
@@ -150,6 +151,20 @@
 }
 /* === Join End === */
 
+/* Rectangle style start */
+.rectangle{
+    height: 630px;
+    /* margin: 224px 0 196px; */
+    background-color: var(--primary-color);
+}
+/* Rectangle style end */
+
+/* Mission style start */
+.img-mt--common{
+    margin-top: 4.5rem;
+}
+/* Mission style end */
+
 @media only screen and (min-width:29.25em){
     .counter::after{
         transform: translate(20px, 30px);
@@ -269,6 +284,9 @@
         -ms-transform: translate(20px, 30px);
         -o-transform: translate(20px, 30px);
     }  
+    .img-mt--common{
+        margin-top: 0;
+    }
 }
 @media only screen and (min-width:62em){
     .about--main{

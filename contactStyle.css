@@ -86,8 +86,9 @@
 }
 .contact__viewMap{
     color:var(--secondary-color);
+    display: inline-block;
     margin-left: 3.5rem !important;
-    margin-top: 2.4rem !important;
+    margin-top: 2rem !important;
 }
 
 /* === Media Queries  Start === */
