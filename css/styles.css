@@ -154,7 +154,7 @@ body {
     font-style: var(--normal);
     letter-spacing:var(--normal);
     font-family: var(--dm-sans);
-    height: 297rem;
+    /* height: 297rem; */
 }
 a:hover{
     cursor: pointer;
@@ -1016,7 +1016,7 @@ input[type="button"].active{
 .stroke_card{
     height: 6.3rem;
     /* max-width: 14rem; */
-    margin-left: 5.3rem;
+    /* margin-left: 5.3rem; */
 }
 .programs_desc_wrapper{
     display: flex;
@@ -1514,8 +1514,8 @@ input[type="button"].active{
         min-height: 25rem;
     }
     .playButton{
-        max-width: 7rem;
-        min-height: 7rem;
+        max-width: 8rem;
+        min-height: 8rem;
     }
     .playButton> img {
     }
@@ -1676,8 +1676,8 @@ input[type="button"].active{
         height: 47rem;
     }
     .playButton{
-        width: 6rem;
-        height: 6rem;
+        width: 8rem;
+        height: 8rem;
     }
     .video__iframe{
         height: inherit;
@@ -1727,10 +1727,10 @@ input[type="button"].active{
     .ampersand_icon{
         display: none;
     }
-    .playButton{
+    /* .playButton{
         max-width: 6rem;
         min-height: 5rem;
-    }
+    } */
     .playButton> img {
         width: 3.2rem;
     }

@@ -19,6 +19,17 @@
 }
 .nav__btn--home{
     border:2px solid var(--white) !important;
+    /* position:relative; */
+}
+.nav__btn--home::before{
+    /* content:"";
+    position:absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%; */
+    background-color:var(--secondary-color) !important;
 }
 .nav__link--home:hover{
     color:var(--white) !important;
@@ -42,12 +53,9 @@
     margin-top: 2rem;
 }
 
-
 /* === Tharapies style start === */
 .tharapies__card {
-    /* height: 47rem; */
     object-fit: contain;
-    /* border:2px solid #bfbfbf; */
     border:2px solid var(--border-color);
     position:relative;
 }
@@ -69,10 +77,8 @@
 
 /* services style start */
 .service{
-    /* width: 38.6rem; */
     max-width: 100%;
     height: 30rem;
-    /* margin: 129.7px 19px 36px; */
     background-color: var(--primary-color);
 }
 /* services style end */
@@ -84,9 +90,8 @@
 }
 
 .col-img-6 >img , .col-img-7 >img{
-    height: 58rem;
+    /* height: 58rem; */
 }
-
 
 /* === Contribute style start === */
 .contribute__col--top{
@@ -105,18 +110,16 @@
 
 .empower{
     width: 100%;
-    height: 20vh;
+    height: 25vh;
     position:relative;
     overflow: hidden;
 }
 .empower__title{
     position:absolute;
-    font-size: clamp(4rem, 6vw + 1rem, 8rem) !important;
+    font-size: clamp(3.2rem, 6vw + 1rem, 8rem) !important;
     animation: move-text 10s linear infinite;
     -webkit-animation: move-text 10s linear infinite;
 }
-
-
 
 @keyframes move-text {
     from {
@@ -126,11 +129,30 @@
         left: 100%;
     }
   }
+.join__btn{
+    position: relative;
+    overflow: hidden;
+    transition:all 0.5s ease-in-out;
+}
 
-  /* .join--home{
-    margin-top: 0 !important;
-  } */
-
+.join__btn::before{
+    content:"";
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    z-index: -1;
+    transform:translateX(-100%);
+    transition:all 0.5s ease-in-out;
+}
+.join__btn:hover::before{
+    transform:translateX(0) !important;
+}
+.join__btn:hover{
+    color:var(--primary-color) !important;
+}
 
   /* ==== Media Queries start ==== */
   @media only screen and (min-width:36em){  
@@ -138,19 +160,18 @@
         padding: 1.9em 3.8em;
         height: 5.7rem !important;
     }
-    /* .contribute__col--btn{
-        padding: 2rem 6rem;
-    } */
   }
   @media only screen and (min-width:48em){
     .donate_btn--home{
         padding: 2em 4em;
         height: 6rem !important;
     }
-    /* .contribute__col--btn{
-        padding: 2rem 7rem;
-    } */
-
+    .col-img-6 >img , .col-img-7 >img{
+        height: 58rem;
+    }
+    .s-card{
+        margin-left: 3rem;
+    }
   }
   @media only screen and (min-width:62em){
     .about_btn--wrapper{
@@ -162,9 +183,9 @@
     .experices-people{
         padding: 120px 0 0 120px;
     }
-    /* .contribute__col--btn{
-        padding: 2rem 8rem;
-    } */
+    .empower{
+        height: 30vh;
+    }
   }
   @media only screen and (min-width:75em){
     .donate_btn--home{
