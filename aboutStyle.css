@@ -9,8 +9,8 @@
     /* line-height: 1.6; */
     line-height: 2;
 }
-.sotry__heading{
-    max-width: 66.7rem;
+.story__heading{
+    /* max-width: 66.7rem; */
     font-size: clamp(4.5rem, 6vw + 1rem, 10rem);
     line-height: 1.1;
     color: var(--primary-color);
@@ -185,7 +185,7 @@
     .sofar__title{
         margin-bottom: -3rem;
     }
-    .sotry__heading{
+    .story__heading{
         margin-top: 2.3rem;
     }
     .rehab__card{
@@ -242,7 +242,7 @@
         height: 52rem;
         margin: 5rem 0 20rem;
     }
-    .sotry__heading{
+    .story__heading{
         margin-top: 2.5rem;
     }
     .recover__rectangle{
@@ -296,7 +296,7 @@
         height: 60rem;
         margin: 5rem 0 22rem;
     }
-    .sotry__heading{
+    .story__heading{
         margin-top: 2.7rem;
     }
     .recover__rectangle{

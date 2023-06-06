@@ -154,6 +154,11 @@
     color:var(--primary-color) !important;
 }
 
+.stand--text{
+    text-align: right;
+    margin-top: -50px;
+}
+
   /* ==== Media Queries start ==== */
   @media only screen and (min-width:36em){  
     .donate_btn--home{
