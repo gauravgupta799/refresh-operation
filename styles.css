@@ -1152,6 +1152,7 @@ input[type="button"].active{
     margin-top: -13%;
     padding-top: 19.6rem;
     object-fit: contain;
+    position: relative;
 }
 .footer__grid{
     display: grid;
