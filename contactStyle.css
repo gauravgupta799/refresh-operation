@@ -10,7 +10,7 @@
 .contact__subheading{
     font-family:"dm sans";
     font-size: clamp(0.8rem, 4vw + 1rem, 2rem) !important;
-    line-height: 1.6;
+    line-height: 2;
     color: var(--primary-color);
     max-width:35ch;
 }
@@ -63,8 +63,8 @@
     margin-top: 25rem;
 }
 .address__heading{
-    font-size: clamp(3rem, 6vw + 1rem, 8rem) !important;
-    line-height: 1.15;
+    /* font-size: clamp(3rem, 6vw + 1rem, 8rem) !important; */
+    /* line-height: 1.15; */
     margin-top: -10rem;
 }
 .contact__lists{
@@ -197,7 +197,8 @@
         margin-top: 33rem;
     }
     .address__heading{
-        margin-top: -9rem;
+        /* margin-top: -9rem; */
+        margin-top: -7rem;
     }
     .contact__lists{
         gap: 2.5rem;
@@ -209,7 +210,8 @@
 }
 @media only screen and (min-width:62em){
     .address__heading{
-        margin-left: -16.3rem;
+        /* margin-left: -16.3rem; */
+        margin-left: -27rem;
     }
     .input__div{
         width: 66.5rem;
