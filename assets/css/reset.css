@@ -74,3 +74,8 @@ iframe, form{
  padding: 0 !important;
 }
 
+::selection{
+	background-color: #4d148c;
+	color:white;
+}
+
