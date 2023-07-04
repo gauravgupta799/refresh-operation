@@ -19,7 +19,6 @@
 }
 .nav__btn--home{
     border:2px solid var(--white) !important;
-    /* position:relative; */
 }
 .nav__btn--home::before{
     /* content:"";
@@ -48,9 +47,6 @@
     background:transparent;
 }
 .group-img-section{
-    /* background-image: url("./assets/images/home-version/group-img.webp"); */
-    /* background-image: url("./assets/images/home-version/Albany-Rehab.webp"); */
-    /* height: 80.6rem; */
     margin-top: 2rem;
 }
 
@@ -79,19 +75,12 @@
 /* services style start */
 .service{
     max-width: 100%;
-    /* height: 30rem; */
-    /* background-color: var(--primary-color); */
 }
 /* services style end */
 
 /* === Experience style start === */
 .experices-people{
-    /* background-image: url("./assets/images/home-version/rect-tilt-orange-bg.svg"); */
     padding: 0px;
-}
-
-.col-img-6 >img , .col-img-7 >img{
-    /* height: 58rem; */
 }
 
 /* === Contribute style start === */
@@ -172,7 +161,7 @@
     transform:scale(1.1);
 }
 
-  /* ==== Media Queries start ==== */
+/* ==== Media Queries start ==== */
   @media only screen and (min-width:36em){  
     .donate_btn--home{
         padding: 1.9em 3.8em;
