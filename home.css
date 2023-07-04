@@ -21,13 +21,6 @@
     border:2px solid var(--white) !important;
 }
 .nav__btn--home::before{
-    /* content:"";
-    position:absolute;
-    top: 0;
-    left: 0;
-    display: inline-block;
-    width: 100%;
-    height: 100%; */
     background-color:var(--secondary-color) !important;
 }
 .nav__link--home:hover{
@@ -109,6 +102,23 @@
     font-size: clamp(3.2rem, 6vw + 1rem, 8rem) !important;
     animation: move-text 10s linear infinite;
     -webkit-animation: move-text 10s linear infinite;
+}
+.experience{
+    position: relative;
+    z-index: 1;
+}
+
+.experience::after{
+    content: url("./assets/images/home-version/orange-polygon-bg.svg");
+    position: absolute;
+    right: -40%;
+    top: 10%;
+    z-index: -1;
+    transition:0.1s;
+    -webkit-transition:0.1s;
+    -moz-transition:0.1s;
+    -ms-transition:0.1s;
+    -o-transition:0.1s;
 }
 
 @keyframes move-text {
