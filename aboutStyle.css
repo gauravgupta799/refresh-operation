@@ -1,6 +1,7 @@
 .about--main{
-    padding-top: 12em;
-    padding-bottom: 10em;
+    /* padding-top: 12em;
+    padding-bottom: 10em; */
+    padding-block: 8em;
 }
 /* === story start ===*/
 .story__subheading{
@@ -21,7 +22,8 @@
 
 /* === Rehab start === */
 .rehab{
-    padding-bottom: 30rem;
+    /* padding-bottom: 30rem; */
+    margin-bottom: 10rem;
 }
 .rehab__card{
     max-width: 42.8rem;

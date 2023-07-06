@@ -74,12 +74,13 @@
     padding-top: 10em;
 }
 .contact__link{
-    margin-left: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
 }
-.contact__link:hover{
-    color:var(--secondary-color) !important;
-}
-.contact__link, .contact__viewMap{
+.contact__link, 
+.contact__viewMap{
     font-size: 2rem;
     line-height: 2;
 }
@@ -90,7 +91,7 @@
 .contact__viewMap{
     color:var(--secondary-color);
     display: inline-block;
-    margin-left: 3.5rem !important;
+    margin-left: 3.3rem !important;
     margin-top: 2rem !important;
 }
 

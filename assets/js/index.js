@@ -1,6 +1,5 @@
 const bodyEle1 = document.querySelector(".body");
 const scrollProgress = document.querySelector(".progress");
-
 const header = document.querySelector(".header");
 const headerHome = document.querySelector(".header--home");
 const hamburgerBtn = document.querySelector(".hamburger__wrapper");
@@ -9,6 +8,7 @@ const headeMobileWrapper = document.querySelector(".header-wrapper--mobile");
 const closeIcon = document.querySelector(".btn-close");
 const mobileNav = document.querySelectorAll(".mobile__navItem");
 const inputBn = document.querySelectorAll('input[type="button"]');
+// const navLink = document.querySelectorAl()
 
 
 const videoContainer = document.querySelector(".video__row")
