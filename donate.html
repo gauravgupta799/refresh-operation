@@ -52,19 +52,20 @@
                     </div>
                     <nav class="mobile__nav ">
                         <ul class="nav__lists mobile__nav__lists">
-                            <li class="nav__item mobile__navItem"><a class="nav__link" href="home.html">Home</a></li>
-                            <li class="nav__item mobile__navItem"><a class="nav__link" href="about.html">About</a></li>
-                            <li class="nav__item mobile__navItem"><a class="nav__link" href="contact.html">Contact</a></li>
+                            <li class="nav__item mobile__navItem"><a class="nav__link nav__link--home text-white" href="home.html">Home</a></li>
+                            <li class="nav__item mobile__navItem"><a class="nav__link nav__link--home text-white" href="about.html">About</a></li>
+                            <li class="nav__item mobile__navItem"><a class="nav__link nav__link--home text-white" href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
                     <div class="d-flex align-items-center justify-content-center my-5 mobile__nav_btn mobile__navItem">
-                        <a href="donate.html" class="nav__btn" role="button">
+                        <a href="donate.html" class="nav__btn nav__btn--home text-white">
                             <span class="nav__btn-text text-uppercase">Donate Now</span>
                         </a>
-                    </div> 
+                    </div>
                 </div>   
             </div> 
         </header>
+
 		<main class="main">
         <!--=======Hero Section Start =======-->
             <section class="hero" id="home">
@@ -82,29 +83,32 @@
                         </div>               
                         <div class="col-12 col-lg-4 card-wrapper m-md-auto m-sm-auto card-animate">
                             <div class="hero__card__wrapper">
-                                <div class="row px-5 py-5 ">
+                                <div class="row px-sm-5 py-5">
                                     <h6 class="hero__card__title text-uppercase">Select the Amount</h6>
-                                    <form class="row g-4">
-                                        <div class="col-lg-4 col-md-4 col-sm-4">
-                                            <input type="button" class="input-bg form-control form-input text-center" id="amount" placeholder="$20" name="fifty" value="$20">
+                                    <form class="row px-5 px-sm-2 px-md-0 g-4">
+                                        <div class="col-lg-4 col-md-4 col-sm-4 flex-center">
+                                            <input type="radio" class="input-bg form-control form-input text-center" id="amount"  name="amount" value="$20">
+                                            <label class="form-input-label">$20</label>
                                         </div>
-                                        <div class="col-lg-4 col-md-4 col-sm-4">
-                                            <input type="button" class="form-control form-input text-center" id="amount" placeholder="$100" name="hundred"  value="$100">
+                                        <div class="col-lg-4 col-md-4 col-sm-4 flex-center">
+                                            <input type="radio" class="form-control form-input text-center" id="amount" placeholder="$100" name="amount" value="$100">
+                                            <label class="form-input-label">$100</label>
                                         </div>
-                                        <div class="col-lg-4 col-md-4 col-sm-4">
-                                            <input type="button" class="form-control form-input text-center" id="amount" placeholder="$150" name="one-fifty" value="$100">
+                                        <div class="col-lg-4 col-md-4 col-sm-4 flex-center">
+                                            <input type="radio" class="form-control form-input text-center" id="amount" placeholder="$150" name="amount" value="$150">
+                                            <label class="form-input-label">$150</label>
                                         </div>
                                         <div class="col-md-6">
                                             <input type="text" class="form-control form-input text-center" id="otherAmount" placeholder="Other Amount">
                                         </div>
                                         <div class="col-md-6">
                                             <select id="inputOnce" class="form-select form-control form-input text-center">
-                                            <option selected ="" class="form-option">Once</option>
-                                            <option class="form-option" value="">Weekly</option>
-                                            <option class="form-option" value="">Monthly</option>
-                                            <option class="form-option" value="">Quarterly</option>
-                                            <option class="form-option" value="">Semiannually</option>
-                                            <option class="form-option" value="">Annually</option>
+                                            <option selected ="" class="form-option" value="once">Once</option>
+                                            <option class="form-option" value="weakly">Weekly</option>
+                                            <option class="form-option" value="monthly">Monthly</option>
+                                            <option class="form-option" value="quarterly">Quarterly</option>
+                                            <option class="form-option" value="semiannually">Semiannually</option>
+                                            <option class="form-option" value="annually">Annually</option>
                                             </select>
                                         </div>
                                         <div class="">

@@ -4,11 +4,9 @@ const header = document.querySelector(".header");
 const headerHome = document.querySelector(".header--home");
 const hamburgerBtn = document.querySelector(".hamburger__wrapper");
 const desktopMenu = document.querySelector(".desktop__menu");
-const headeMobileWrapper = document.querySelector(".header-wrapper--mobile");
+const headerMobileWrapper = document.querySelector(".header-wrapper--mobile");
 const closeIcon = document.querySelector(".btn-close");
 const mobileNav = document.querySelectorAll(".mobile__navItem");
-const inputBn = document.querySelectorAll('input[type="button"]');
-// const navLink = document.querySelectorAl()
 
 
 const videoContainer = document.querySelector(".video__row")
@@ -16,18 +14,20 @@ const playBtn = document.querySelector(".playButton");
 const playIcon = document.querySelector(".playBtn");
 const pauseIcon = document.querySelector(".pauseBtn");
 const videoRow = document.querySelector(".video__row");
-
 const loader = document.getElementById("preloader");
-
 const InputDiv = document.querySelectorAll(".input__div");
 
 const videoId = "3kJCZTC1aaE";
 const clr = "#4d148c";
 // 3kJCZTC1aaE
 
+// Page Loader
 window.addEventListener("load",()=>{
   loader.style.display = "none";
 })
+
+// Activer Nav Link
+
 
 window.addEventListener('scroll', () => {
     const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -42,28 +42,23 @@ window.addEventListener('scroll', () => {
 });
 
 hamburgerBtn.addEventListener("click", () => {
-    headeMobileWrapper.classList.add("active");
+    headerMobileWrapper.classList.add("active");
 })
 
 closeIcon.addEventListener("click", () => {
-    headeMobileWrapper.classList.remove("active")
+    headerMobileWrapper.classList.remove("active")
 })
 
 mobileNav.forEach(item=>{
     item.addEventListener("click",()=>{
-        headeMobileWrapper.classList.remove("active");
+        headerMobileWrapper.classList.remove("active");
     })
-})
-
-inputBn.forEach(item=>{
-  item.addEventListener("click",()=>{
-    item.classList.toggle('active');
-  })
 })
 
 InputDiv.forEach((item)=>{
   item.addEventListener("focusin", ()=>{
     item.classList.add("isBorder");
+
   })
   item.addEventListener("focusout", ()=>{
     item.classList.remove("isBorder");

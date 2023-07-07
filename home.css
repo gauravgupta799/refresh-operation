@@ -92,7 +92,7 @@
 
 .empower{
     width: 100%;
-    height: 25vh;
+    height: 7vh;
     position:relative;
     overflow: hidden;
 }
@@ -176,6 +176,9 @@
         padding: 1.9em 3.8em;
         height: 5.7rem !important;
     }
+    .empower{
+        height: 12vh;
+    }
   }
   @media only screen and (min-width:48em){
     .donate_btn--home{
@@ -187,6 +190,9 @@
     }
     .s-card{
         margin-left: 3rem;
+    }
+    .empower{
+        height: 20vh;
     }
   }
   @media only screen and (min-width:62em){
@@ -200,7 +206,7 @@
         padding: 120px 0 0 120px;
     }
     .empower{
-        height: 30vh;
+        height: 25vh;
     }
   }
   @media only screen and (min-width:75em){
@@ -212,6 +218,9 @@
     }
     .contribute__col--btn{
         padding: 0.7em 2rem;
+    }
+    .empower{
+        height: 30vh;
     }
   }
   @media only screen and (min-width:87.5em){
