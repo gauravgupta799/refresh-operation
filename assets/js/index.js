@@ -8,7 +8,6 @@ const headerMobileWrapper = document.querySelector(".header-wrapper--mobile");
 const closeIcon = document.querySelector(".btn-close");
 const mobileNav = document.querySelectorAll(".mobile__navItem");
 
-
 const videoContainer = document.querySelector(".video__row")
 const playBtn = document.querySelector(".playButton");
 const playIcon = document.querySelector(".playBtn");
@@ -27,7 +26,13 @@ window.addEventListener("load",()=>{
 })
 
 // Activer Nav Link
-
+const currentPage = window.location.pathname;
+const navLinks = document.querySelectorAll(".nav__link");
+navLinks.forEach(navLink => {
+  if(navLink.href.includes(`${currentPage}`)){
+    navLink.classList.add("active");
+  }
+})
 
 window.addEventListener('scroll', () => {
     const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -175,4 +180,3 @@ cardContainers.forEach((item, i) => {
     ease: Power4.easeOut,
   });
 });
-
