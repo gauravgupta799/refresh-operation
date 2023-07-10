@@ -92,13 +92,13 @@
 
 .empower{
     width: 100%;
-    height: 7vh;
+    height: 15vh;
     position:relative;
     overflow: hidden;
 }
 .empower__title{
     position:absolute;
-    font-size: clamp(3.2rem, 6vw + 1rem, 8rem) !important;
+    font-size: clamp(3.2rem, 4vw + 1rem, 8rem) !important;
     animation: move-text 10s linear infinite;
     -webkit-animation: move-text 10s linear infinite;
 }
@@ -177,7 +177,7 @@
         height: 5.7rem !important;
     }
     .empower{
-        height: 12vh;
+        height: 20vh;
     }
   }
   @media only screen and (min-width:48em){
@@ -192,7 +192,7 @@
         margin-left: 3rem;
     }
     .empower{
-        height: 20vh;
+        height: 25vh;
     }
   }
   @media only screen and (min-width:62em){
@@ -206,7 +206,7 @@
         padding: 120px 0 0 120px;
     }
     .empower{
-        height: 25vh;
+        height: 30vh;
     }
   }
   @media only screen and (min-width:75em){
@@ -220,7 +220,7 @@
         padding: 0.7em 2rem;
     }
     .empower{
-        height: 30vh;
+        height: 35vh;
     }
   }
   @media only screen and (min-width:87.5em){

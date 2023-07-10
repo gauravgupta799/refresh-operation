@@ -116,7 +116,7 @@
     line-height: 1.43;
 }
 .values__video{
-    margin-top: 9rem;
+    margin-top: 5rem;
     margin-bottom: 2rem;
     background-color: var(--primary-color);
 }
@@ -126,7 +126,7 @@
 .join{
     height: 86rem;
     margin-top: 9rem;
-    padding: 15rem 0rem 15rem 0rem;
+    padding-block: 20em 15em;
     background-color: var(--secondary-color);
     margin-bottom: 0rem;
 }
@@ -205,7 +205,7 @@
         margin-bottom: 9rem;
     }
     .values__video{
-        margin-top: 9.5rem;
+        /* margin-top: 9.5rem; */
         margin-bottom: 2.3rem;
     }
     .join{
@@ -253,7 +253,7 @@
         max-width: 30.3rem;
     }
     .values__video{
-        margin-top: 10.5rem;
+        margin-top: 8rem;
         margin-bottom: 2.7rem;
     }
     .join{
@@ -271,9 +271,6 @@
         -ms-transform: translate(20px, 30px);
         -o-transform: translate(20px, 30px);
     }  
-    .img-mt--common{
-        margin-top: 0;
-    }
 }
 @media only screen and (min-width:62em){
     .about--main{
@@ -306,8 +303,7 @@
     }
     .join{
         margin-top: 25rem;
-        padding: 14rem 0rem 28rem 0rem ;
-        padding: 14.5rem 32.6rem 40rem 8.5rem ;
+        /* padding: 14.5rem 32.6rem 40rem 8.5rem ; */
         margin-bottom: -10rem;
     }
     .join__btn{
@@ -347,11 +343,14 @@
     }
     .join{
         margin-top: 33rem;
-        padding: 15rem 32.6rem 20rem 8.5rem ;
+        /* padding: 15rem 32.6rem 20rem 8.5rem ; */
         margin-bottom: -12rem;
     }
     .join__btn{
         height: 6.5rem;
         padding: 1.25em 2.8125em;
+    }
+    .img-mt--common{
+        margin-top: 0;
     }
 }
