@@ -123,7 +123,7 @@ if(pauseIcon != null){
   })
 }
 
-
+gsap.registerPlugin(ScrollTrigger);
 // animation fade in 
 const fadeIn = gsap.utils.toArray(".animate-fade-in");
 fadeIn.forEach((mainContent, i) => {
@@ -147,15 +147,15 @@ const textContainers = gsap.utils.toArray(".animate-fade-in-up");
 textContainers.forEach((item, i) => {
   const anim = gsap.fromTo(
     item,
-    { opacity: 0, y: "15%" },
-    { duration: 1.2, opacity: 1, y: 0 }
+    { opacity: 0, y: 50 },
+    { duration: 1, opacity: 1, y: 0 }
   );
   ScrollTrigger.create({
     trigger: item,
     animation: anim,
     toggleActions: "play",
     once: true,
-    duration:1.2,
+    duration:1,
     stagger:0.1,
     ease: Power4.easeOut,
   });

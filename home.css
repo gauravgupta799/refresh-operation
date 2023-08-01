@@ -91,17 +91,37 @@
 /* === Contribute style end === */
 
 .empower{
-    width: 100%;
-    height: 15vh;
-    position:relative;
+    display: flex;
+    justify-content: flex-start;
     overflow: hidden;
 }
 .empower__title{
-    position:absolute;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0 4rem;
     font-size: clamp(3.2rem, 4vw + 1rem, 8rem) !important;
     animation: move-text 10s linear infinite;
     -webkit-animation: move-text 10s linear infinite;
 }
+
+@keyframes move-text {
+    0%{
+       transform:translateX(-100%);
+       -webkit-transform:translateX(-100%);
+       -moz-transform:translateX(-100%);
+       -ms-transform:translateX(-100%);
+       -o-transform:translateX(-100%);
+}
+    100%{
+        transform:translateX(0%);
+        -webkit-transform:translateX(0%);
+        -moz-transform:translateX(0%);
+        -ms-transform:translateX(0%);
+        -o-transform:translateX(0%);
+}
+}
+
 .experience{
     position: relative;
     z-index: 1;
@@ -119,15 +139,6 @@
     -ms-transition:0.1s;
     -o-transition:0.1s;
 }
-
-@keyframes move-text {
-    from {
-        left: 0;
-    }
-    to {
-        left: 100%;
-    }
-  }
 .join__btn{
     position: relative;
     overflow: hidden;
@@ -177,7 +188,7 @@
         height: 5.7rem !important;
     }
     .empower{
-        height: 20vh;
+        /* height: 20vh; */
     }
   }
   @media only screen and (min-width:48em){
@@ -192,7 +203,7 @@
         margin-left: 3rem;
     }
     .empower{
-        height: 25vh;
+        /* height: 25vh; */
     }
   }
   @media only screen and (min-width:62em){
@@ -206,7 +217,7 @@
         padding: 120px 0 0 120px;
     }
     .empower{
-        height: 30vh;
+        /* height: 30vh; */
     }
   }
   @media only screen and (min-width:75em){
@@ -220,7 +231,7 @@
         padding: 0.7em 2rem;
     }
     .empower{
-        height: 35vh;
+        /* height: 35vh; */
     }
   }
   @media only screen and (min-width:87.5em){
