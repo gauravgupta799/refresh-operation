@@ -181,14 +181,47 @@
     transform:scale(1.1);
 }
 
+.span-container{
+    position: relative;
+    display: inline-block;
+    height: 2em;
+    vertical-align: bottom;
+    overflow: hidden;
+    text-align: center;
+}
+
+.span-title{
+    display: block;
+    animation:animateWords 5s infinite ease;
+    -webkit-animation:animateWords 5s infinite ease;
+}
+
+@keyframes animateWords{
+    0%{
+        transform:translateY(0%);
+    }
+    25%{
+        transform:translateY(-100%);
+    }
+    50%{
+        transform:translateY(-200%);
+    }
+    75%{
+        transform:translateY(-300%);
+    }
+    100%{
+        transform:translateY(-400%);
+    }
+}
+.exp-img-right{
+    width: 100%;
+}
+
 /* ==== Media Queries start ==== */
   @media only screen and (min-width:36em){  
     .donate_btn--home{
         padding: 1.9em 3.8em;
         height: 5.7rem !important;
-    }
-    .empower{
-        /* height: 20vh; */
     }
   }
   @media only screen and (min-width:48em){
@@ -202,8 +235,8 @@
     .s-card{
         margin-left: 3rem;
     }
-    .empower{
-        /* height: 25vh; */
+    .exp-img-right{
+        width: auto;
     }
   }
   @media only screen and (min-width:62em){
@@ -216,9 +249,6 @@
     .experices-people{
         padding: 120px 0 0 120px;
     }
-    .empower{
-        /* height: 30vh; */
-    }
   }
   @media only screen and (min-width:75em){
     .donate_btn--home{
@@ -229,9 +259,6 @@
     }
     .contribute__col--btn{
         padding: 0.7em 2rem;
-    }
-    .empower{
-        /* height: 35vh; */
     }
   }
   @media only screen and (min-width:87.5em){

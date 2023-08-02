@@ -130,13 +130,14 @@ fadeIn.forEach((mainContent, i) => {
   const anim = gsap.fromTo(
     mainContent,
     { opacity: 0 },
-    { duration: 1.2, opacity: 1, stagger: 0.5 }
+    { duration: 1.2, opacity: 1,}
   );
   ScrollTrigger.create({
     trigger: mainContent,
     animation: anim,
     toggleActions: "play",
     once: true,
+    stagger: 0.5 ,
     duration: 1.2,
     ease: Power4.easeOut,
   });
